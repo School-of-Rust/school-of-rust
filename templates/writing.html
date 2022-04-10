@@ -1,0 +1,33 @@
+{% extends "base.html" %}
+{% import "macros.html" as macros %}
+
+{% block content %}
+
+    <h1>{{ page.title }}</h1>
+    {{ page.content | safe }}
+
+    <div class="flex-x">
+        {% if page.earlier %}
+            <h1 class="fill prev">Prev Post</h1>
+        {% endif %}
+        {% if page.later %}
+            <h1 class="fill next">Next Post</h1>
+        {% endif %}
+    </div>
+
+    <div class="flex-x">
+        <div class="fill">
+            {% if page.earlier %}
+                {% set icon = page.earlier.extra.icon | default(value="fa-pen-nib") %}
+                {{ macros::thumbnail(title=page.earlier.title, desc=page.earlier.description, icon=icon, link=page.earlier.permalink) }}
+            {% endif %}
+        </div>
+        <div class="fill">
+            {% if page.later %}
+                {% set icon = page.later.extra.icon | default(value="fa-pen-nib") %}
+                {{ macros::thumbnail(title=page.later.title, desc=page.later.description, icon=icon, link=page.later.permalink) }}
+            {% endif %}
+        </div>
+    </div>
+
+{% endblock content %}

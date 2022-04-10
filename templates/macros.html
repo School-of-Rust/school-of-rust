@@ -1,0 +1,22 @@
+{% macro thumbnail(title, desc, icon, link) %}
+    <a class="thumb", href="{{ link }}">
+        <table><tbody><tr>
+            <td class="thumb-icon">
+                <i class="fa {{ icon }}"></i>
+            </td>
+            <td>
+                <div class="thumb-title">{{ title }}</div>
+                <div class="thumb-desc">{{ desc }}</div>
+            </td>
+        </tr></tbody></table>
+    </a>
+{% endmacro thumbnail %}
+
+{% macro crate(url, icon, text) %}
+    {% if url %}
+        {% set disabled = "" %}
+    {% else %}
+        {% set disabled = "disabled" %}
+    {% endif %}
+    <a class="fill {{ disabled }}" href="{{ url }}" target="_blank"><i class="{{ icon }}"></i> <div>{{ text }}</div></a>
+{% endmacro crate %}

@@ -1,0 +1,54 @@
+{% extends "base.html" %}
+{% import "macros.html" as macros %}
+
+{% block content %}
+
+{{ section.content | safe }}
+
+<div class="flex-x">
+    <div class="fill">
+        {% set page = get_page(path="lessons/lesson1.md") %}
+        {% set icon = page.extra.icon | default(value="fa-question") %}
+        {{ macros::thumbnail(title=page.title, desc=page.description, icon=icon, link=page.permalink) }}
+    </div>
+    <div class="fill">
+        {% set page = get_page(path="lessons/lesson2.md") %}
+        {% set icon = page.extra.icon | default(value="fa-question") %}
+        {{ macros::thumbnail(title=page.title, desc=page.description, icon=icon, link=page.permalink) }}
+    </div>
+</div>
+
+<div class="flex-x">
+    <div class="fill">
+        {% set sect = get_section(path="lessons/_index.md") %}
+        {% set icon = sect.extra.icon | default(value="fa-question") %}
+        {{ macros::thumbnail(title=sect.title, desc=sect.description, icon=icon, link=sect.permalink) }}
+    </div>
+    <div class="fill">
+        {% set sect = get_section(path="writing/_index.md") %}
+        {% set icon = sect.extra.icon | default(value="fa-question") %}
+        {{ macros::thumbnail(title=sect.title, desc=sect.description, icon=icon, link=sect.permalink) }}
+    </div>
+</div>
+
+<p>
+    {% set sect = get_section(path="writing/_index.md") %}
+    <h2><i class="fa-solid fa-pen-nib"></i> Latest Posts</h2>
+    {% for page in sect.pages %}
+        {% if loop.index < 5 %} {% set icon=page.extra.icon | default(value="fa-question" ) %}
+            {{ macros::thumbnail(title=page.title, desc=page.description, icon=icon, link=page.permalink) }}
+        {% endif %}
+    {% endfor %}
+</p>
+
+<p>
+    {% set sect = get_section(path="writing/_index.md") %}
+    <h2><i class="fa-solid fa-handshake-angle"></i> Contributing</h2>
+    {% for page in sect.pages %}
+        {% if loop.index < 5 %} {% set icon=page.extra.icon | default(value="fa-question" ) %}
+            {{ macros::thumbnail(title=page.title, desc=page.description, icon=icon, link=page.permalink) }}
+        {% endif %}
+    {% endfor %}
+</p>
+
+{% endblock content %}

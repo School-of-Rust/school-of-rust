@@ -1,0 +1,55 @@
+.fullscreen {
+  margin: 0;
+  padding: 0;
+  width: 100vw;
+  height: 100vh;
+}
+
+.flex-x {
+  display: flex;
+  flex-direction: row;
+}
+
+.flex-y {
+  display: flex;
+  flex-direction: column;
+}
+
+.fill {
+  flex: 1;
+}
+
+.scroll-x {
+  overflow-x: auto;
+  white-space: nowrap;
+}
+
+.scroll-y {
+  overflow-y: auto;
+  height: 0;
+}
+
+.center-x {
+  text-align: center !important;
+}
+
+.center-y {
+  @extend .flex-y;
+  justify-content: center;
+  align-content: center;
+}
+
+.center {
+  @extend .center-x;
+  @extend .center-y;
+}
+
+.bottom {
+  @extend .flex-y;
+  justify-content: flex-end;
+  align-content: flex-end;
+}
+
+.right {
+  text-align: right !important;
+}

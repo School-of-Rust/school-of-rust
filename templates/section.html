@@ -1,0 +1,15 @@
+{% extends "base.html" %}
+{% import "macros.html" as macros %}
+
+{% block content %}
+
+    <h1>{{ section.title }}</h1>
+
+    {{ section.content | safe }}
+
+    {% for page in section.pages %}
+        {% set icon = page.extra.icon | default(value="fa-question") %}
+        {{ macros::thumbnail(title=page.title, desc=page.description, icon=icon, link=page.permalink) }}
+    {% endfor %}
+
+{% endblock content %}
