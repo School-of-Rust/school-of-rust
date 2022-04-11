@@ -5,7 +5,7 @@
     {% set selected = "" %}
 {% endif %}
 <a href="{{ sect.permalink }}" class="nav-link {{ selected }}">
-    <div><i class="fas {{ sect.extra.icon }}"></i></div>
+    <div><i class="{{ sect.extra.icon }}"></i></div>
     <div>{{ sect.title }}</div>
 </a>
 {% for sect_name in sect.subsections %}
@@ -18,7 +18,7 @@
         {% set selected = "" %}
     {% endif %}
     <a href="{{ sect.permalink }}" class="nav-link {{ selected }}">
-        <div><i class="fas {{ sect.extra.icon }}"></i></div>
+        <div><i class="{{ sect.extra.icon }}"></i></div>
         <div>{{ sect.title }}</div>
     </a>
 {% endfor %}

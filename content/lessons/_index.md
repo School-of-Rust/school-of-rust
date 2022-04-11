@@ -7,7 +7,7 @@ sort_by = "weight"
 weight = 10
 
 [extra]
-icon = "fa-graduation-cap"
+icon = "fa-solid fa-graduation-cap"
 +++
 
 This is a series of tutorials to teach the [Rust](https://www.rust-lang.org/) programming language.

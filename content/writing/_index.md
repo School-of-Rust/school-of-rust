@@ -1,13 +1,13 @@
 +++
 title = "Writing"
-description = "Where I write about programming & game development."
+description = "Where I post my tips, tricks, & general musings about Rust."
 template = "section.html"
 page_template = "writing.html"
 sort_by = "date"
 weight = 20
 
 [extra]
-icon = "fa-pen-nib"
+icon = "fa-solid fa-pen-nib"
 +++
 
 Whether I'm musing about Rust, exploring design patterns, game development,
