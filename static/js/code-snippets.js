@@ -4,10 +4,18 @@ for (let i = 0; i < codes.length; ++i) {
     const code = codes[i];
     code.setAttribute("class", code.getAttribute("class") + " code");
 
-    const stripped = code.innerHTML.replace(/(<([^>]+)>)/gi, "");
+    // Get the code's raw text without HTML tags and line numbers
+    let text = "";
+    const rows = code.getElementsByTagName("tr");
+    for (let r = 0; r < rows.length; ++r) {
+        const row = rows[r];
+        text += row.children[1].textContent;
+    }
+    if (text.endsWith("\n"))
+        text = text.substring(0, text.length - 1);
 
     // Create the playground link
-    const linkIcon = document.createElement("i");
+    /*const linkIcon = document.createElement("i");
     linkIcon.setAttribute("class", "fas fa-play");
 
     const link = document.createElement("a");
@@ -17,7 +25,7 @@ for (let i = 0; i < codes.length; ++i) {
     link.setAttribute("target", "_blank");
     link.setAttribute("title", "Open with Rust Playground.");
     link.appendChild(linkIcon);
-    link.innerHTML += "RUN";
+    link.innerHTML += "RUN";*/
 
     // Create the clipboard link
     const copyIcon = document.createElement("i");
@@ -30,13 +38,13 @@ for (let i = 0; i < codes.length; ++i) {
     copy.innerHTML += "COPY";
 
     copy.onclick = () => {
-        navigator.clipboard.writeText(stripped);
+        navigator.clipboard.writeText(text);
     };
 
     // Create the buttons container
     const buttons = document.createElement("div");
     buttons.setAttribute("class", "code-buttons");
     buttons.appendChild(copy);
-    buttons.appendChild(link);
+    //buttons.appendChild(link);
     code.before(buttons);
 }

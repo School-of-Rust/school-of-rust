@@ -200,15 +200,6 @@ p {
   padding-left: 20px;
   padding-right: 20px;
   padding-bottom: 20px;
-
-  code {
-    font-family: "Fira Code", monospace;
-    font-size: 0.8em;
-    background-color: $color-bg0h;
-    border: 1px dotted $color-bg4;
-    padding-left: 4px;
-    padding-right: 4px;
-  }
 }
 
 ul {
@@ -250,6 +241,22 @@ hr {
 td {
   font-weight: inherit;
   line-height: inherit;
+}
+
+p {
+  line-height: 25px;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-bottom: 20px;
+
+  code {
+    font-family: "Fira Code", monospace;
+    font-size: 0.8em;
+    background-color: $color-bg0h;
+    border: 1px dotted $color-bg4;
+    padding-left: 4px;
+    padding-right: 4px;
+  }
 }
 
 pre {
@@ -400,6 +407,27 @@ pre {
   font-style: italic;
 }
 
+.quote-header {
+  color: $color-fg4;
+  font-size: 16px;
+  font-family: "Righteous", sans-serif;
+  font-weight: 400;
+  line-height: 28px;
+  letter-spacing: 2px;
+  margin: 0;
+  border-bottom: 2px dotted;
+  border-color: $color-fg4;
+  padding: 5px 0 0 0;
+  background-color: inherit;
+
+  i {
+    font-size: 16px;
+    color: inherit;
+    padding: 6px 0 0 0;
+    margin: 0 5px 0 0;
+  }
+}
+
 blockquote {
   background-color: $color-bg1;
   margin-left: 20px;
@@ -407,6 +435,25 @@ blockquote {
   border-radius: 10px;
   padding-left: 10px;
   padding-right: 20px;
+  margin-bottom: 20px;
+
+  h1 {
+    @extend .quote-header;
+    color: $color-green2;
+    border-color: $color-green2;
+  }
+
+  h2 {
+    @extend .quote-header;
+    color: $color-blue2;
+    border-color: $color-blue2;
+  }
+
+  h3 {
+    @extend .quote-header;
+    color: $color-yellow2;
+    border-color: $color-yellow2;
+  }
 
   i {
     font-size: 25px;
@@ -416,136 +463,10 @@ blockquote {
   }
 
   p {
+    font-weight: 300;
     font-style: italic;
     font-size: 0.9em;
     padding: 10px 0 10px 0;
-  }
-
-  code {
-    font-style: normal;
-    background-color: $color-bg;
-  }
-}
-
-.crate-block {
-  margin-left: 20px;
-  margin-right: 20px;
-}
-
-.crate-list {
-  font-family: "Fira Code", monospace;
-  width: 180px;
-  margin-right: 20px;
-
-  a {
-    padding: 3px 10px 3px 10px;
-    margin-bottom: 10px;
-    display: block;
-    border: 2px solid $color-bg2;
-    border-radius: 5px;
-    background-color: $color-bg0h;
-    color: $color-fg4;
-    user-select: none;
-
-    i {
-      margin-right: 10px;
-      margin-top: 2px;
-      color: $color-bg4;
-      font-size: 18px;
-    }
-
-    &.selected {
-
-      background-color: inherit;
-      pointer-events: none;
-      color: $color-bg4;
-      border-style: dotted;
-
-      i {
-        color: $color-bg3;
-      }
-    }
-
-    &:hover {
-      color: $color-fg;
-      background-color: inherit;
-      border-color: $color-bg4;
-      i {
-        color: $color-fg;
-      }
-    }
-  }
-}
-
-.crate-info {
-  h2 {
-    margin: 0 0 10px 0;
-    font-family: "Fira Code", monospace;
-  }
-
-  p {
-    padding-left: 0;
-  }
-
-  ul {
-    padding-left: 20px;
-    margin-bottom: 20px;
-  }
-
-  blockquote {
-    margin: 0 0 20px 0;
-  }
-
-  pre {
-    margin-left: 0;
-    margin-right: 0;
-  }
-}
-
-.crate-info-links {
-  margin-bottom: 10px;
-
-  a {
-    border: 1px dotted $color-bg4;
-    border-radius: 5px;
-    color: $color-fg4;
-    padding: 2px 10px 2px 10px;
-    user-select: none;
-
-    i {
-      color: $color-bg4;
-    }
-
-    div {
-      display: inline;
-    }
-
-    &:not(:last-child) {
-      margin-right: 10px;
-    }
-
-    &:hover {
-      cursor: pointer;
-      background-color: $color-bg0h;
-      border-color: $color-bg4;
-      color: $color-yellow2;
-
-      i {
-        color: $color-yellow1;
-      }
-    }
-  }
-}
-
-@media(max-width: $shrink-w) {
-  .crate-info-links a {
-    text-align: center;
-    i {
-      font-size: 25px;
-    }
-    div {
-      display: block;
-    }
   }
 }
 

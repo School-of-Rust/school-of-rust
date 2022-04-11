@@ -19,3 +19,30 @@ experienced coders.
 The goal of this website is to provide *high quality* learning material
 to help people break down those barriers so we can all make quality
 software and art together.
+
+```rs,linenos
+fn main() {
+    println!("Hello, world!");
+}
+```
+
+Here is a `fn main() {}` code tag.
+
+Block quote for lingo:
+
+> # <i class="fa-solid fa-circle-question"></i> LINGO
+> 
+> A "crate" is a Rust library, but with a particular structure and some metadata so it
+> will work with Rust's package manager [crates.io](crates.io)!
+
+Block for tip:
+
+> ## <i class="fa-solid fa-circle-info"></i> TIP
+> 
+> Here is a cool little thing that might help you!
+
+Block quote for a warning:
+
+> ### <i class="fa-solid fa-triangle-exclamation"></i> WARNING
+> 
+> Just so you know, bad stuff could happen!
