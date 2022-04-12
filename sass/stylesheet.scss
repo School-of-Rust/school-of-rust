@@ -7,6 +7,7 @@ $title-w: 552px;
 $title-h: 47px;
 $page-w: 800px;
 $shrink-w: 820px;
+$font-enlarge-w: 600px;
 
 /*
     Block quote for lingo:
@@ -522,15 +523,17 @@ iframe {
   .side-bar {
     display: none;
   }
-  .content {
-    font-size: 1.5em;
-    line-height: 1.3em;
-  }
   .quote-header {
     font-size: 1.0em;
     padding-top: 10px;
     i {
       padding: 8px 0 0 0;
     }
+  }
+}
+@media(max-width: $font-enlarge-w) {
+  .content {
+    font-size: 1.5em;
+    line-height: 1.3em;
   }
 }
