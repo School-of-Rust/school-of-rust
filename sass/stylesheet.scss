@@ -35,9 +35,9 @@ $shrink-w: 1000px;
 
 body {
   font-family: "Fira Sans", sans-serif;
-  font-size: 18px;
+  font-size: 14pt;
   font-weight: 300;
-  line-height: 25px;
+  line-height: 1.39em;
   background-color: $color-bg0h;
   color: $color-fg;
   height: 100vh;
@@ -45,13 +45,6 @@ body {
   ::selection {
     background-color: $color-fg1;
     color: $color-bg0h;
-  }
-}
-
-@media(max-width: $shrink-w) {
-  body {
-    font-size: 24px;
-    line-height: 33px;
   }
 }
 
@@ -175,6 +168,13 @@ body {
   background-color: $color-bg0;
   padding-top: 1px;
   padding-bottom: 20px;
+}
+
+@media(max-width: $shrink-w) {
+  .content {
+    font-size: 1.5em;
+    line-height: 1.3em;
+  }
 }
 
 h1 {
@@ -312,7 +312,7 @@ pre {
   counter-reset: line;
   margin: 0 10px 20px 10px;
   background-color: $color-bg0h !important;
-  line-height: 1.2em;
+  line-height: 1.4em;
 
   code table {
     table-layout: fixed;
