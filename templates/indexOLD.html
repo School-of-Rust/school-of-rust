@@ -1,0 +1,56 @@
+{% extends "base.html" %}
+{% import "macros.html" as macros %}
+
+{% block content %}
+
+{{ section.content | safe }}
+
+<div class="flex-x">
+    <div class="fill">
+        {% set sect = get_section(path="lessons/_index.md") %}
+        {% set icon = sect.extra.icon | default(value="fa-solid fa-question") %}
+        {{ macros::thumbnail(title=sect.title, desc=sect.description, icon=icon, link=sect.permalink) }}
+    </div>
+    <div class="fill">
+        {% set sect = get_section(path="writing/_index.md") %}
+        {% set icon = sect.extra.icon | default(value="fa-solid fa-question") %}
+        {{ macros::thumbnail(title=sect.title, desc=sect.description, icon=icon, link=sect.permalink) }}
+    </div>
+</div>
+
+<div class="flex-x">
+    <div class="fill">
+        {% set sect = get_section(path="exercises/_index.md") %}
+        {% set icon = sect.extra.icon | default(value="fa-solid fa-question") %}
+        {{ macros::thumbnail(title=sect.title, desc=sect.description, icon=icon, link=sect.permalink) }}
+    </div>
+    <div class="fill">
+        {% set sect = get_section(path="contribute/_index.md") %}
+        {% set icon = sect.extra.icon | default(value="fa-solid fa-question") %}
+        {{ macros::thumbnail(title=sect.title, desc=sect.description, icon=icon, link=sect.permalink) }}
+    </div>
+</div>
+
+<div class="flex-x">
+    <div class="fill">
+        {% set sect = get_section(path="writing/_index.md") %}
+        <h2><i class="{{ sect.extra.icon }}"></i> Latest Posts</h2>
+        {% for page in sect.pages %}
+            {% if loop.index < 5 %} {% set icon=page.extra.icon | default(value="fa-solid fa-question" ) %}
+                {{ macros::thumbnail(title=page.title, desc=page.description, icon=icon, link=page.permalink) }}
+            {% endif %}
+        {% endfor %}
+    </div>
+    <div class="fill">
+        {% set sect = get_section(path="lessons/_index.md") %}
+        <h2><i class="{{ sect.extra.icon }}"></i> Latest Courses</h2>
+        {% for subsect in sect.subsections %}
+            {% set page = get_section(path=subsect) %}
+            {% if loop.index < 5 %} {% set icon=page.extra.icon | default(value="fa-solid fa-question" ) %}
+                {{ macros::thumbnail(title=page.title, desc=page.description, icon=icon, link=page.permalink) }}
+            {% endif %}
+        {% endfor %}
+    </div>
+</div>
+
+{% endblock content %}

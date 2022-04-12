@@ -1,0 +1,49 @@
+@import 'fonts';
+@import 'colors';
+
+body {
+    background-color: $color-bg0h;
+    font-family: 'regular';
+    font-weight: 400;
+    font-size: 16px;
+}
+
+.page-outer {
+    display: flex;
+    flex-direction: row;
+}
+
+.page-center {
+    width: #{'min(100%, 800px)'};
+    margin: 0 auto;
+    background-color: white;
+}
+
+.page-side {
+    background-color: gray;
+    flex: 1;
+    img {
+        width: 100%;
+        height: 47px;
+    }
+}
+
+.title-outer {
+    display: flex;
+    flex-direction: row;
+}
+
+.title {
+    img {
+        width: 100%;
+        height: 47px;
+    }
+}
+
+.title-side {
+    flex: 1;
+    img {
+        width: 100%;
+        height: 47px;
+    }
+}
