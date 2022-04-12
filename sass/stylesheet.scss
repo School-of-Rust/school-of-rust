@@ -6,7 +6,7 @@
 $title-w: 552px;
 $title-h: 47px;
 $page-w: 800px;
-$shrink-w: 414px;
+$shrink-w: 820px;
 
 /*
     Block quote for lingo:
@@ -519,32 +519,6 @@ iframe {
   .page-side {
     background-image: url("img/bars_3.png");
   }
-  .page-center {
-    width: 100vw;
-  }
-  .side-bar {
-    display: none;
-  }
-  .content {
-    //font-size: 1.5em;
-    //line-height: 1.3em;
-  }
-  .quote-header {
-    //font-size: 1.0em;
-    //padding-top: 10px;
-    //i {
-    //  padding: 8px 0 0 0;
-    //}
-  }
-}
-
-/*@media(max-width: $shrink-w) {
-  .page-side {
-    background-image: url("img/bars_3.png");
-  }
-  .page-center {
-    width: 100vw;
-  }
   .side-bar {
     display: none;
   }
@@ -559,4 +533,4 @@ iframe {
       padding: 8px 0 0 0;
     }
   }
-}*/
+}
