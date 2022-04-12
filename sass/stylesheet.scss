@@ -6,7 +6,7 @@
 $title-w: 552px;
 $title-h: 47px;
 $page-w: 800px;
-$shrink-w: $page-w + 20px;
+$shrink-w: 1000px;
 
 /*
     Block quote for lingo:
@@ -48,6 +48,13 @@ body {
   }
 }
 
+@media(max-width: $shrink-w) {
+  body {
+    font-size: 24px;
+    line-height: 33px;
+  }
+}
+
 .page {
   margin-top: 20px;
 }
@@ -61,6 +68,12 @@ body {
   @extend .bars;
   background-image: url("img/bars_2.png");
   background-size: auto $title-h;
+}
+
+@media(max-width: $shrink-w) {
+  .page-side {
+    background-image: url("img/bars_3.png");
+  }
 }
 
 .page-center {
@@ -144,10 +157,11 @@ body {
     div {
       display: block;
       text-align: center;
+      line-height: 1.6rem;
     }
-    //i {
-    //  font-size: 30px;
-    //}
+    i {
+      font-size: 1.67rem;
+    }
   }
 }
 
@@ -159,10 +173,10 @@ body {
 
 h1 {
   color: $color-fg;
-  font-size: 0.875em;
+  font-size: 1.78rem;
   font-family: "Righteous", sans-serif;
   font-weight: 400;
-  line-height: 28px;
+  line-height: 1.56rem;
   letter-spacing: 2px;
   margin: 20px 10px 20px 10px;
   border-bottom: 2px dotted;
@@ -189,7 +203,7 @@ h2 {
   color: $color-yellow2;
   font-size: 1.67rem;
   font-weight: bold;
-  line-height: 28px;
+  line-height: 1.56rem;
   letter-spacing: 1px;
   background-color: $color-bg0h;
   margin: 20px 10px 20px 10px;
@@ -233,7 +247,7 @@ ul {
   padding-bottom: 20px;
 
   li {
-    line-height: 25px;
+    line-height: 1.3em;
 
     &:before {
       content: "\2794";
@@ -293,7 +307,7 @@ pre {
   counter-reset: line;
   margin: 0 10px 20px 10px;
   background-color: $color-bg0h !important;
-  line-height: 20px;
+  line-height: 1.2em;
 
   code table {
     table-layout: fixed;
@@ -383,13 +397,13 @@ pre {
   user-select: none;
   border: 2px solid $color-bg2;
   border-radius: 5px;
-  line-height: 20px;
+  line-height: 1.1em;
   padding: 10px;
   margin: 10px;
 
   .thumb-icon {
     vertical-align: middle;
-    font-size: 30px;
+    font-size: 1.67rem;
     color: $color-bg4;
     width: 40px;
   }
@@ -436,10 +450,10 @@ pre {
 
 .quote-header {
   color: $color-fg4;
-  font-size: 16px;
+  font-size: 0.89em;
   font-family: "Righteous", sans-serif;
   font-weight: 400;
-  line-height: 28px;
+  line-height: 1.56rem;
   letter-spacing: 2px;
   margin: 0;
   border-bottom: 2px dotted;
@@ -448,10 +462,18 @@ pre {
   background-color: inherit;
 
   i {
-    font-size: 16px;
+    font-size: 0.89em;
     color: inherit;
     padding: 6px 0 0 0;
     margin: 0 5px 0 0;
+  }
+}
+
+@media(max-width: $shrink-w) {
+  .quote-header {
+    i {
+      padding: 2px 0 0 0;
+    }
   }
 }
 
@@ -483,7 +505,7 @@ blockquote {
   }
 
   i {
-    font-size: 25px;
+    font-size: 1.39rem;
     color: $color-bg3;
     margin-right: 10px;
     float: left;
