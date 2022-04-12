@@ -28,9 +28,13 @@
                     <img src="/img/bars_3.png">
                 </div>
             </div>
-            <div>
-                {% block content %}
-                {% endblock content %}
+            <div class="content-outer">
+                <div class="content-side"></div>
+                <div class="content">
+                    {% block content %}
+                    {% endblock content %}
+                </div>
+                <div class="content-side"></div>
             </div>
         </div>
         <div class="page-side">
