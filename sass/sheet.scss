@@ -8,56 +8,31 @@ body {
     font-size: 16px;
 }
 
-.page-outer {
+.page-upper {
     display: flex;
     flex-direction: row;
 }
 
-.page-center {
-    width: #{'min(100%, 800px)'};
-    margin: 0 auto;
+.page-lower {
+
 }
 
-.page-side {
+.upper-side {
     flex: 1;
-    img {
-        width: 100%;
-        height: 47px;
-    }
-}
-
-.title-outer {
-    display: flex;
-    flex-direction: row;
-}
-
-.title {
-    img {
-        width: 100%;
-        height: 47px;
-    }
+    background-image: url(/img/bars_2.png);
+    background-size: auto #{'min(8.5vw, 47px)'};
 }
 
 .title-side {
     flex: 1;
-    img {
-        width: 100%;
-        height: 47px;
-    }
+    height: #{'min(8.5vw, 47px)'};
+    background-image: url(/img/bars_3.png);
+    background-size: auto #{'min(8.5vw, 47px)'};
 }
 
-.content-outer {
-    display: flex;
-    flex-direction: row;
-}
-
-.content-side {
-    background-color: $color-yellow2;
-    width: 10px;
-}
-
-.content {
-    flex: 1;
-    background-color: $color-bg0;
-    color: $color-fg;
+.title {
+    width: #{'min(100vw, 552px)'};
+    height: #{'min(8.5vw, 47px)'};
+    background-image: url(/img/title.png);
+    background-size: 100% auto;
 }
