@@ -80,6 +80,12 @@ body {
   width: $page-w;
 }
 
+@media(max-width: $shrink-w) {
+  .page-center {
+    width: 100vw;
+  }
+}
+
 .page-upper {
   height: $title-h;
 }
