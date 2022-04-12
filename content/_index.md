@@ -19,3 +19,42 @@ experienced coders.
 The goal of this website is to provide *high quality* learning material
 to help people break down those barriers so we can all make quality
 software and art together.
+
+# Header 1
+
+```rs,linenos
+fn main() {
+    println!("Hello, world!");
+}
+```
+
+Here is a warning block...
+
+> ### <i class="fa-solid fa-triangle-exclamation"></i> WARNING
+>
+> This is a warning!
+
+Some text after the warning block.
+
+## Header 2
+
+Here is a `paragraph` that is going to be several lines long. I want to make sure that
+putting some `InlineCode` in the paragraph won't mess up the line heights at all,
+because I want all lines to always be the same height.
+Here is a paragraph that is going to be several lines long. I want to make sure that
+putting some InlineCode in the paragraph won't mess up the line heights at all,
+because I want all lines to always be the same height.
+
+Here is a list:
+
+- First item
+- Second item
+- Third item
+
+Some text after the list.
+
+### Header 3
+
+Here is some random text.
+
+---

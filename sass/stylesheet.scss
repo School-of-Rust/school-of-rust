@@ -37,6 +37,7 @@ body {
   font-family: "Fira Sans", sans-serif;
   font-size: 18px;
   font-weight: 300;
+  line-height: 25px;
   background-color: $color-bg0h;
   color: $color-fg;
   height: 100vh;
@@ -221,7 +222,6 @@ a {
 }
 
 p {
-  line-height: 25px;
   padding-left: 20px;
   padding-right: 20px;
   padding-bottom: 20px;
@@ -230,6 +230,7 @@ p {
 ul {
   padding-left: 30px;
   padding-right: 20px;
+  padding-bottom: 20px;
 
   li {
     line-height: 25px;
@@ -269,7 +270,6 @@ td {
 }
 
 p {
-  line-height: 25px;
   padding-left: 20px;
   padding-right: 20px;
   padding-bottom: 20px;
@@ -277,10 +277,12 @@ p {
   code {
     font-family: "Fira Code", monospace;
     font-size: 0.8em;
+    line-height: 0.8em;
     background-color: $color-bg0h;
     border: 1px dotted $color-bg4;
     padding-left: 4px;
     padding-right: 4px;
+    padding-top: 2px;
   }
 }
 
