@@ -42,6 +42,7 @@ body {
   background-color: $color-bg0h;
   color: $color-fg;
   height: 100vh;
+  min-width: $page-w;
 
   ::selection {
     background-color: $color-fg1;
