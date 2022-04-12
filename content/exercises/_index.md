@@ -12,9 +12,11 @@ icon = "fa-solid fa-screwdriver-wrench"
 
 I've noticed that a common question asked by people learning Rust is something like:
 
-> Does anyone have any examples of a small project I could create? I've learned
+> "Does anyone have any examples of a small project I could create? I've learned
 > the basics, but I want a real-world thing to create to practice actually building
-> a working piece of software from beginning to end.
+> a working piece of software from beginning to end."
+>
+> *&#8212; Troubled Rustacean*
 
 My goal here is to have series' of exercises that provide exactly this. These will
 usually be in the form of small example programs they will write. These programs
