@@ -3,18 +3,20 @@
 
 {% block content %}
 
-    <h1>{{ section.title }}</h1>
+    <h1><i class="{{ section.extra.icon }}"></i> {{ section.title }}</h1>
 
     {{ section.content | safe }}
 
     {% for sect_name in section.subsections %}
         {% set sect = get_section(path=sect_name) %}
-        <a href="{{ sect.permalink }}"><h2>{{ sect.title }}</h2></a>
+        {% set icon = sect.extra.icon | default(value="fa-solid fa-graduation-cap") %}
+        <a href="{{ sect.permalink }}"><h2><i class="{{ icon }}"></i>  {{ sect.title }}</h2></a>
         {{ sect.content | safe }}
         {% for page in sect.pages %}
-            {% set icon = page.extra.icon | default(value="fa-solid fa-question") %}
+            {% set icon = page.extra.icon | default(value="fa-solid fa-book") %}
             {{ macros::thumbnail(title=page.title, desc=page.description, icon=icon, link=page.permalink) }}
         {% endfor %}
+        <p>Some Text</p>
     {% endfor %}
 
 {% endblock content %}

@@ -1,9 +1,9 @@
 +++
-title = "Course 1"
+title = "Getting Started"
 description = "This is the first course."
 template = "section.html"
 page_template = "lesson.html"
-sort_by = "date"
+sort_by = "weight"
 weight = 10
 
 [extra]

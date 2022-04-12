@@ -36,7 +36,7 @@ Here is a warning block...
 
 Some text after the warning block.
 
-## Header 2 {#header2}
+## HEADER 2 {#header2}
 
 Here is a `paragraph` that is going to be several lines long. I want to make sure that
 putting some `InlineCode` in the paragraph won't mess up the line heights at all,
@@ -53,7 +53,7 @@ Here is a list:
 
 Some text after the list.
 
-### Header 3 {#header3}
+### HEADER 3 {#header3}
 
 Here is some random text.
 

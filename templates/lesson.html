@@ -2,7 +2,12 @@
 {% import "macros.html" as macros %}
 
 {% block content %}
-    <h1>{{ page.title }}</h1>
+    {% set icon = page.extra.icon | default(value="fa-solid fa-graduation-cap") %}
+    <h1 class="has-meta"><i class="{{ icon }}"></i> {{ page.title }}</h1>
+    <div class="page-meta">
+        <i class="fa-solid fa-calendar-days"></i> <span id="date">{{ page.date }}</span>
+        <i class="fa-solid fa-clock"></i> {{ page.reading_time }} minute read
+    </div>
 
     {{ page.content | safe }}
 
@@ -18,13 +23,13 @@
     <div class="flex-x">
         <div class="fill">
             {% if page.lighter %}
-                {% set icon = page.lighter.extra.icon | default(value="fa-graduation-cap") %}
+                {% set icon = page.lighter.extra.icon | default(value="fa-solid fa-graduation-cap") %}
                 {{ macros::thumbnail(title=page.lighter.title, desc=page.lighter.description, icon=icon, link=page.lighter.permalink) }}
             {% endif %}
         </div>
         <div class="fill">
             {% if page.heavier %}
-                {% set icon = page.heavier.extra.icon | default(value="fa-graduation-cap") %}
+                {% set icon = page.heavier.extra.icon | default(value="fa-solid fa-graduation-cap") %}
                 {{ macros::thumbnail(title=page.heavier.title, desc=page.heavier.description, icon=icon, link=page.heavier.permalink) }}
             {% endif %}
         </div>

@@ -3,7 +3,13 @@
 
 {% block content %}
 
-    <h1>{{ page.title }}</h1>
+    {% set icon = page.extra.icon | default(value="fa-solid fa-pen-nib") %}
+    <h1 class="has-meta"><i class="{{ icon }}"></i> {{ page.title }}</h1>
+    <div class="page-meta">
+        <i class="fa-solid fa-calendar-days"></i> <span id="date">{{ page.date }}</span>
+        <i class="fa-solid fa-clock"></i> {{ page.reading_time }} minute read
+    </div>
+
     {{ page.content | safe }}
 
     <div class="flex-x">
@@ -18,13 +24,13 @@
     <div class="flex-x">
         <div class="fill">
             {% if page.earlier %}
-                {% set icon = page.earlier.extra.icon | default(value="fa-pen-nib") %}
+                {% set icon = page.earlier.extra.icon | default(value="fa-solid fa-pen-nib") %}
                 {{ macros::thumbnail(title=page.earlier.title, desc=page.earlier.description, icon=icon, link=page.earlier.permalink) }}
             {% endif %}
         </div>
         <div class="fill">
             {% if page.later %}
-                {% set icon = page.later.extra.icon | default(value="fa-pen-nib") %}
+                {% set icon = page.later.extra.icon | default(value="fa-solid fa-pen-nib") %}
                 {{ macros::thumbnail(title=page.later.title, desc=page.later.description, icon=icon, link=page.later.permalink) }}
             {% endif %}
         </div>

@@ -178,28 +178,30 @@ h1 {
   border-bottom: 2px dotted;
   border-color: $color-fg;
   padding-bottom: 10px;
+  text-transform: uppercase;
 
   &.prev {
     color: $color-bg4;
     border-color: $color-bg4;
-    margin-bottom: 0;
     margin-top: 80px;
+    font-size: 1.2em;
   }
 
   &.next {
     color: $color-bg4;
     border-color: $color-bg4;
     text-align: right;
-    margin-bottom: 0;
     margin-top: 80px;
+    font-size: 1.2em;
   }
 }
 
 h2 {
   color: $color-yellow2;
-  font-size: 1.5em;
-  font-weight: bold;
+  font-size: 1.4em;
+  font-weight: 700;
   line-height: 0.8em;
+  text-transform: uppercase;
   letter-spacing: 1px;
   background-color: $color-bg0h;
   margin: 20px 10px 20px 10px;
@@ -207,10 +209,21 @@ h2 {
 
 h3 {
   color: $color-green2;
-  font-size: 1.3em;
-  font-weight: 500;
+  font-size: 1.2em;
+  font-weight: 600;
+  text-transform: uppercase;
+  line-height: 0.8em;
   background-color: $color-bg0h;
   margin: 20px 10px 20px 10px;
+}
+
+@media(max-width: $shrink-w) {
+  h2 {
+    //font-size: 1.3em;
+  }
+  h2 {
+    //font-size: 1.3em;
+  }
 }
 
 a {
@@ -394,7 +407,7 @@ pre {
   border-radius: 5px;
   line-height: 1.1em;
   padding: 10px;
-  margin: 10px;
+  margin: 0 10px 10px 10px;
 
   .thumb-icon {
     vertical-align: middle;
@@ -525,4 +538,21 @@ iframe {
 .disabled {
   pointer-events: none;
   opacity: 0.5;
+}
+
+.has-meta {
+  margin-bottom: 0;
+}
+
+.page-meta {
+  padding: 10px 10px 0 10px;
+  margin-bottom: 20px;
+  font-style: italic;
+  font-weight: 400;
+  font-size: 0.8em;
+  color: $color-bg4;
+}
+
+#date {
+  margin-right: 10px;
 }

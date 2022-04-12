@@ -9,3 +9,5 @@ weight = 10
 [extra]
 icon = "fa-solid fa-graduation-cap"
 +++
+
+These are all the lessons that will teach you Rust!
