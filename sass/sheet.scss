@@ -3,14 +3,12 @@
 
 body {
     background-color: $color-bg0h;
-    font-family: 'regular';
-    font-weight: 400;
-    font-size: 16px;
 }
 
 .upper {
     display: flex;
     flex-direction: row;
+    padding-top: 5px;
 }
 .upper-side {
     flex: 1;
@@ -45,25 +43,31 @@ body {
 .lower-center {
     display: flex;
     flex-direction: row;
-    
     width: #{'min(100vw, 800px)'};
 }
 
-.content-side {
+.inner-side {
     width: #{'min(1.75vw, 10px)'};
-
-    //1.75
     background-color: $color-yellow2;
 }
-.content {
+.inner {
     flex: 1;
 }
 
 @media(max-width: 572px) {
-    .title-side {
-        background-image: none;
+    .inner-side {
+        display:none;
     }
-    .content-side {
-        display: none;
-    }
-  }
+}
+
+.content {
+    background-color: $color-bg0;
+    color: $color-fg;
+    
+    font-family: 'regular';
+    font-weight: 400;
+    font-size: 18px;
+
+    margin: 20px;
+    padding: 20px;
+}

@@ -24,9 +24,14 @@
     <div class="lower">
         <div class="lower-side"></div>
         <div class="lower-center">
-            <div class="content-side"></div>
-            <div class="content"></div>
-            <div class="content-side"></div>
+            <div class="inner-side"></div>
+            <div class="inner">
+                <div class="content">
+                    {% block content %}
+                    {% endblock content %}
+                </div>
+            </div>
+            <div class="inner-side"></div>
         </div>
         <div class="lower-side"></div>
     </div>
