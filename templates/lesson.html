@@ -8,6 +8,9 @@
         <i class="fa-solid fa-calendar-days"></i> <span id="date">{{ page.date }}</span>
         <i class="fa-solid fa-clock"></i> {{ page.reading_time }} minute read
     </div>
+    <div>
+        Path: {{ page.path }}
+    </div>
 
     {{ page.content | safe }}
 
