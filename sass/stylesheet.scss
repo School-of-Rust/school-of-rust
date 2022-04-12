@@ -115,7 +115,7 @@ body {
 
 @media(max-width: $shrink-w) {
   .side-bar {
-    background-color: transparent;
+    display: none;
   }
 }
 
