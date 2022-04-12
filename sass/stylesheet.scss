@@ -145,9 +145,9 @@ body {
       display: block;
       text-align: center;
     }
-    i {
-      font-size: 30px;
-    }
+    //i {
+    //  font-size: 30px;
+    //}
   }
 }
 
@@ -159,7 +159,7 @@ body {
 
 h1 {
   color: $color-fg;
-  font-size: 32px;
+  font-size: 0.875em;
   font-family: "Righteous", sans-serif;
   font-weight: 400;
   line-height: 28px;
@@ -187,7 +187,7 @@ h1 {
 
 h2 {
   color: $color-yellow2;
-  font-size: 30px;
+  font-size: 1.67rem;
   font-weight: bold;
   line-height: 28px;
   letter-spacing: 1px;
@@ -197,7 +197,7 @@ h2 {
 
 h3 {
   color: $color-green2;
-  font-size: 24px;
+  font-size: 1.33rem;
   font-weight: 500;
   letter-spacing: 1px;
   background-color: $color-bg0h;
