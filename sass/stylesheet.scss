@@ -6,7 +6,7 @@
 $title-w: 552px;
 $title-h: 47px;
 $page-w: 800px;
-$shrink-w: 428px;
+$shrink-w: 414px;
 
 /*
     Block quote for lingo:
@@ -63,20 +63,8 @@ body {
   background-size: auto $title-h;
 }
 
-@media(max-width: $shrink-w) {
-  .page-side {
-    background-image: url("img/bars_3.png");
-  }
-}
-
 .page-center {
   width: $page-w;
-}
-
-@media(max-width: $shrink-w) {
-  .page-center {
-    width: 100vw;
-  }
 }
 
 .page-upper {
@@ -103,12 +91,6 @@ body {
 .side-bar {
   width: 10px;
   background-color: $color-yellow2;
-}
-
-@media(max-width: $shrink-w) {
-  .side-bar {
-    display: none;
-  }
 }
 
 .inside-box {
@@ -160,12 +142,7 @@ body {
   padding-bottom: 20px;
 }
 
-@media(max-width: $shrink-w) {
-  .content {
-    font-size: 1.5em;
-    line-height: 1.3em;
-  }
-}
+
 
 h1 {
   color: $color-fg;
@@ -215,15 +192,6 @@ h3 {
   line-height: 0.8em;
   background-color: $color-bg0h;
   margin: 20px 10px 20px 10px;
-}
-
-@media(max-width: $shrink-w) {
-  h2 {
-    //font-size: 1.3em;
-  }
-  h2 {
-    //font-size: 1.3em;
-  }
 }
 
 a {
@@ -477,16 +445,6 @@ pre {
   }
 }
 
-@media(max-width: $shrink-w) {
-  .quote-header {
-    font-size: 1.0em;
-    padding-top: 10px;
-    i {
-      padding: 8px 0 0 0;
-    }
-  }
-}
-
 blockquote {
   background-color: $color-bg1;
   margin-left: 20px;
@@ -556,3 +514,49 @@ iframe {
 #date {
   margin-right: 10px;
 }
+
+@media(max-width: $shrink-w) {
+  .page-side {
+    background-image: url("img/bars_3.png");
+  }
+  .page-center {
+    width: 100vw;
+  }
+  .side-bar {
+    display: none;
+  }
+  .content {
+    //font-size: 1.5em;
+    //line-height: 1.3em;
+  }
+  .quote-header {
+    //font-size: 1.0em;
+    //padding-top: 10px;
+    //i {
+    //  padding: 8px 0 0 0;
+    //}
+  }
+}
+
+/*@media(max-width: $shrink-w) {
+  .page-side {
+    background-image: url("img/bars_3.png");
+  }
+  .page-center {
+    width: 100vw;
+  }
+  .side-bar {
+    display: none;
+  }
+  .content {
+    font-size: 1.5em;
+    line-height: 1.3em;
+  }
+  .quote-header {
+    font-size: 1.0em;
+    padding-top: 10px;
+    i {
+      padding: 8px 0 0 0;
+    }
+  }
+}*/
