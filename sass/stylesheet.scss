@@ -8,6 +8,31 @@ $title-h: 47px;
 $page-w: 800px;
 $shrink-w: $page-w + 20px;
 
+/*
+    Block quote for lingo:
+
+    > # <i class="fa-solid fa-circle-question"></i> LINGO
+    > 
+    > Maybe there is some lingo you don't understand, since coders love to
+    > drop mysterious acronyms at the speed of light. We've got you covered!
+
+    Block for tip:
+
+    > ## <i class="fa-solid fa-circle-info"></i> TIP
+    > 
+    > Here is a cool little thing that might help you! These might link to
+    > additional reading material or other tutorials that expand on the
+    > subject at hand. This way, we don't have to digress too much.
+
+    Block quote for a warning:
+
+    > ### <i class="fa-solid fa-triangle-exclamation"></i> WARNING
+    > 
+    > Just so you know, bad stuff could happen! Maybe I've told you to write
+    > some bad `code` as an example, but want to warn you about the possible
+    > repercussions.
+*/
+
 body {
   font-family: "Fira Sans", sans-serif;
   font-size: 18px;
@@ -463,7 +488,8 @@ blockquote {
   }
 
   p {
-    font-weight: 300;
+    color: $color-fg3;
+    font-weight: 400;
     font-style: italic;
     font-size: 0.9em;
     padding: 10px 0 10px 0;

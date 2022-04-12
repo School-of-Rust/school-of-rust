@@ -44,7 +44,8 @@
     <div class="fill">
         {% set sect = get_section(path="lessons/_index.md") %}
         <h2><i class="{{ sect.extra.icon }}"></i> Latest Courses</h2>
-        {% for page in sect.subsections %}
+        {% for subsect in sect.subsections %}
+            {% set page = get_section(path=subsect) %}
             {% if loop.index < 5 %} {% set icon=page.extra.icon | default(value="fa-solid fa-question" ) %}
                 {{ macros::thumbnail(title=page.title, desc=page.description, icon=icon, link=page.permalink) }}
             {% endif %}
