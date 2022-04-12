@@ -1,0 +1,20 @@
+{% extends "base.html" %}
+{% import "macros.html" as macros %}
+
+{% block content %}
+
+    <h1>{{ section.title }}</h1>
+
+    {{ section.content | safe }}
+
+    {% for sect_name in section.subsections %}
+        {% set sect = get_section(path=sect_name) %}
+        <a href="{{ sect.permalink }}"><h2>{{ sect.title }}</h2></a>
+        {{ sect.content | safe }}
+        {% for page in sect.pages %}
+            {% set icon = page.extra.icon | default(value="fa-solid fa-question") %}
+            {{ macros::thumbnail(title=page.title, desc=page.description, icon=icon, link=page.permalink) }}
+        {% endfor %}
+    {% endfor %}
+
+{% endblock content %}

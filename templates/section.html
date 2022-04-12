@@ -8,7 +8,7 @@
     {{ section.content | safe }}
 
     {% for page in section.pages %}
-        {% set icon = page.extra.icon | default(value="fa-question") %}
+        {% set icon = page.extra.icon | default(value="fa-solid fa-question") %}
         {{ macros::thumbnail(title=page.title, desc=page.description, icon=icon, link=page.permalink) }}
     {% endfor %}
 
