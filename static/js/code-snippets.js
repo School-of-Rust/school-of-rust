@@ -1,6 +1,8 @@
 let codes = Array.from(document.getElementsByTagName("pre"));
 
 for (let i = 0; i < codes.length; ++i) {
+    continue;
+    
     const code = codes[i];
     code.setAttribute("class", code.getAttribute("class") + " code");
 
