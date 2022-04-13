@@ -68,20 +68,22 @@ body {
     font-family: 'regular';
     font-weight: 400;
     font-size: 18px;
-    line-height: 1.25;
 
     margin: 20px;
     padding: 20px;
 }
 
 a {
-    color: $color-yellow1;
-    text-decoration: 2.5px dotted underline;
-
+    text-decoration: none;
     &:hover {
         color: $color-fg0;
-        border-color: $color-fg0;
     }
+}
+
+p > a {
+    color: $color-yellow1;
+    text-decoration: 2px dotted underline;
+    text-decoration-color: $color-bg3;
 }
 
 em {
@@ -111,6 +113,8 @@ h3 {
 }
 
 p {
+    line-height: 1.35em;
+
     code {
         font-family: "code", monospace;
         font-size: 0.8em;
@@ -122,6 +126,7 @@ p {
         padding-right: 4px;
         padding-top: 2px;
     }
+
     em {
         code {
             color: $color-yellow2;
@@ -129,6 +134,7 @@ p {
             font-weight: normal;
         }
     }
+
     strong {
         code {
             color: $color-purple2;
@@ -136,6 +142,14 @@ p {
             font-weight: normal;
         }
     }
+
+    img {
+        max-width: 100%;
+    }
+}
+
+iframe {
+    max-width: 100%;
 }
 
 .blockquote-h {
@@ -325,5 +339,53 @@ pre {
 
     i {
         font-size: 1.67em;
+    }
+}
+
+.thumb {
+    display: block;
+    user-select: none;
+    border: 2px solid $color-bg2;
+    border-radius: 5px;
+    padding: 10px;
+    text-decoration: none;
+    margin-block-start: 0.5em;
+    margin-block-end: 0.5em;
+  
+    .thumb-icon {
+        vertical-align: middle;
+        font-size: 1.5em;
+        color: $color-bg4;
+        width: 1.4em;
+    }
+  
+    .thumb-title {
+        font-weight: 500;
+        color: $color-yellow1;
+        padding-bottom: 5px;
+    }
+  
+    .thumb-desc {
+        color: $color-fg3;
+        font-weight: 300;
+        font-size: 0.95em;
+    }
+  
+    &:hover {
+        cursor: pointer;
+        background-color: $color-bg0h;
+        border-color: $color-bg4;
+    
+        .thumb-icon {
+            color: $color-fg3;
+        }
+    
+        .thumb-title {
+            color: $color-fg;
+        }
+    
+        .thumb-desc {
+            color: $color-fg;
+        }
     }
 }
