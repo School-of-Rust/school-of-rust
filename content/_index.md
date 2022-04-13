@@ -84,7 +84,7 @@ Here is a table with 3 columns:
 | green   | 0x00ff00      |   $12 |
 | blue    | 0x0000ff      |    $1 |
 
-> Here is a table in a block quote:
+> # Table In Block Quote
 > 
 > | Name    | Hex Code      | Cost  |
 > | ------- | ------------- | ----- |
