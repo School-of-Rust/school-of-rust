@@ -393,3 +393,64 @@ pre {
         }
     }
 }
+
+:not(code) > table {
+    font-family: 'code';
+    font-size: 0.8em;
+    line-height: 1.5em;
+    //width: 100%;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+
+    border-spacing: 0;
+    border-collapse: collapse;
+
+    thead {
+        text-align: left;
+        background-color: $color-bg1;
+        color: $color-fg;
+        th {
+            padding: 5px 20px 5px 20px;
+        }
+    }
+
+    tbody {
+        background-color: $color-bg0h;
+        color: $color-fg3;
+        td {
+            padding: 3px 20px 3px 20px;
+        }
+        tr:not(:first-of-type) {
+            border-top: 1px solid $color-bg0;
+        }
+    }
+
+    th:first-of-type {
+        border-top-left-radius: 5px;
+    }
+    th:last-of-type {
+        border-top-right-radius: 5px;
+    }
+    tr:last-of-type td:first-of-type {
+        border-bottom-left-radius: 5px;
+    }
+    tr:last-of-type td:last-of-type {
+        border-bottom-right-radius: 5px;
+    }
+}
+
+blockquote {
+    table {
+        margin-left: 10px;
+        thead {
+            background-color: $color-bg2;
+        }
+        tbody {
+            background-color: $color-bg0;
+            color: $color-fg2;
+            tr:not(:first-of-type) {
+                border-top: 1px solid $color-bg1;
+            }
+        }
+    }
+}

@@ -70,6 +70,28 @@ Aliquam dapibus nunc vel sapien posuere fermentum. Vivamus quis sapien sollicitu
 
 Sed luctus diam at faucibus placerat. Praesent finibus libero nec ultrices porta. Proin eu pretium enim. Sed sit amet nunc quis dui venenatis volutpat vel non felis. Integer dignissim dignissim enim ultricies ornare. Sed in justo ac velit fringilla posuere.
 
+| Name    | Hex Code      |
+|:-------:|:-------------:|
+| red     | 0xff0000      |
+| green   | 0x00ff00      |
+| blue    | 0x0000ff      |
+
+Here is a table with 3 columns:
+
+| Name    | Hex Code      | Cost  |
+| ------- | ------------- | ----- |
+| red     | 0xff0000      | $1600 |
+| green   | 0x00ff00      |   $12 |
+| blue    | 0x0000ff      |    $1 |
+
+> Here is a table in a block quote:
+> 
+> | Name    | Hex Code      | Cost  |
+> | ------- | ------------- | ----- |
+> | red     | 0xff0000      | $1600 |
+> | green   | 0x00ff00      |   $12 |
+> | blue    | 0x0000ff      |    $1 |
+
 Maecenas quis maximus erat. Aliquam massa tellus, consequat in tortor ac, consequat vestibulum lectus. Proin et imperdiet arcu. Duis tempor massa at tortor mollis posuere. Sed in nisi dolor.
 
 ## A Third Section
