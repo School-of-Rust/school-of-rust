@@ -7,7 +7,7 @@ icon = "fa-solid fa-home"
 +++
 
 
-# Learn Rust & Get Creative
+# <i class="fa-solid fa-gear"></i> Learn Rust & Get Creative
 
 Lorem ipsum dolor sit amet, *consectetur* adipiscing elit. Fusce non eros sit amet est dapibus imperdiet. Nam ut ex molestie, *`Vec<T>`* tortor vel, tempor urna. Nunc ultrices odio sit amet mi condimentum, eu `pretium` neque auctor. Suspendisse **dapibus** rutrum felis, quis porttitor dui efficitur volutpat. Cras eleifend magna et lacus pellentesque dapibus. Nullam **`fringilla`** sodales ipsum. Vivamus a mi [https://google.com](https://google.com) eget nunc laoreet elementum et sit amet justo.
 
