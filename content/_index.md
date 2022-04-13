@@ -40,6 +40,13 @@ Vestibulum placerat sed nisl eget [maximus](https://#). Nam non purus erat. Aene
 - First item in the list
 - Second item
 - The last item
+- ~~Crossed out item~~
+
+Numbered list:
+
+1. First item
+2. Second item
+3. Third item
 
 In vel sem ornare, varius dolor non, dignissim arcu. Proin quis magna nec sapien rutrum pharetra sit amet nec velit. Duis efficitur mi in consectetur cursus. Nulla molestie mi ligula, ac luctus mauris tempus ac.
 

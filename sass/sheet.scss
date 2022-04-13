@@ -106,8 +106,15 @@ h3 {
     border-color: $color-green2;
 }
 
-ul {
+ul, ol {
     line-height: 1.36;
+}
+li {
+    padding-left: 2px;
+
+    &::marker {
+        color: $color-fg4;
+    }
 }
 
 p {
