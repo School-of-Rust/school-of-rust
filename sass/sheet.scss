@@ -422,7 +422,7 @@ pre {
     }
 }
 
-:not(code) > table {
+.table-style {
     font-family: 'code';
     font-size: 0.8em;
     line-height: 1.5em;
@@ -467,8 +467,14 @@ pre {
     }
 }
 
+.content > table {
+    @extend .table-style;
+}
+
 blockquote {
     table {
+        @extend .table-style;
+
         margin-left: 10px;
         thead {
             background-color: $color-bg2;
