@@ -156,6 +156,15 @@ iframe {
     max-width: 100%;
 }
 
+hr {
+    border: none;
+    border-bottom: 2px dotted $color-bg3;
+}
+
+blockquote hr {
+    border-color: $color-bg4;
+}
+
 .blockquote-h {
     font-family: "header";
     font-size: 1em;

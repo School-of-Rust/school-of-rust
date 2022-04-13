@@ -56,6 +56,8 @@ Praesent tempor gravida leo, in pulvinar ex fermentum ut. Aenean in imperdiet tu
 > # HEADER 1
 > Donec in elementum urna. In faucibus non risus eu tempus. In elementum suscipit ipsum ultrices venenatis.
 >
+> ---
+>
 > Pellentesque condimentum ante ac elementum venenatis. Sed eget orci vel elit iaculis vulputate ut at mauris.
 
 > ## LINGO
@@ -96,4 +98,8 @@ Maecenas quis maximus erat. Aliquam massa tellus, consequat in tortor ac, conseq
 
 ## A Third Section
 
-Donec in elementum urna. In faucibus non risus eu tempus. In elementum suscipit ipsum ultrices venenatis. In at blandit elit. Sed ac gravida dui. Nunc blandit lacus vitae turpis tempor, sit amet elementum elit ornare. Aenean porta pharetra tincidunt. Fusce vel est consequat, fermentum orci vel, posuere justo. Sed volutpat nisl ipsum, vitae sollicitudin velit eleifend sollicitudin. Nam dictum quam sit amet libero imperdiet, et congue risus lacinia. Duis consectetur dui ut diam dictum gravida. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Pellentesque condimentum ante ac elementum venenatis. Sed eget orci vel elit iaculis vulputate ut at mauris.
+Donec in elementum urna. In faucibus non risus eu tempus. In elementum suscipit ipsum ultrices venenatis. In at blandit elit. Sed ac gravida dui. Nunc blandit lacus vitae turpis tempor, sit amet elementum elit ornare. Aenean porta pharetra tincidunt. Fusce vel est consequat, fermentum orci vel, posuere justo. Sed volutpat nisl ipsum, vitae sollicitudin velit eleifend sollicitudin.
+
+---
+
+Nam dictum quam sit amet libero imperdiet, et congue risus lacinia. Duis consectetur dui ut diam dictum gravida. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Pellentesque condimentum ante ac elementum venenatis. Sed eget orci vel elit iaculis vulputate ut at mauris.
