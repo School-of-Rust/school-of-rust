@@ -40,10 +40,16 @@
         <div class="lower-center">
             <div class="inner-side"></div>
             <div class="inner">
+                <div class="nav-bar">
+                    <div class="nav-side"></div>
+                    {% include "nav-bar.html" %}
+                    <div class="nav-side"></div>
+                </div>
                 <div class="content">
                     {% block content %}
                     {% endblock content %}
                 </div>
+                {% include "footer.html" %}
             </div>
             <div class="inner-side"></div>
         </div>

@@ -251,3 +251,79 @@ pre {
         cursor: pointer;
     }
 }
+
+.footer {
+    font-family: 'regular';
+    font-weight: 400;
+    line-height: 1.4em;
+    margin-top: 20px;
+    margin-bottom: 120px;
+    color: $color-bg4;
+    text-align: center;
+    
+  
+    a {
+        color: $color-blue2;
+        text-decoration: none;
+        font-family: "code", monospace;
+        font-size: 0.9em;
+    }
+  
+    i {
+        width: 20px;
+        text-align: center;
+    }
+  
+    p {
+        margin: 0;
+        padding: 0;
+    }
+}
+
+.nav-bar {
+    display: flex;
+    flex-direction: row;
+    padding-top: 20px;
+}
+
+.nav-side {
+    flex: 1;
+}
+  
+.nav-link {
+    display: block;
+
+    font-family: 'regular';
+    font-size: #{'min(3vw, 20px)'};
+    font-weight: bold;
+    line-height: 1.2em;
+    color: $color-blue1;
+
+    text-align: center;
+    text-transform: uppercase;
+    text-decoration: none;
+
+    margin-left: #{'min(1.5vw, 10px)'};
+    margin-right: #{'min(1.5vw, 10px)'};
+
+    user-select: none;
+    border: none;
+
+    &:hover {
+        color: $color-yellow2;
+    }
+
+    &.underline {
+        border-bottom: #{'min(1.05vw, 7px)'} solid;
+    }
+
+    &.selected {
+        border-color: $color-yellow2;
+        color: $color-yellow2;
+        pointer-events: none;
+    }
+
+    i {
+        font-size: 1.67em;
+    }
+}
