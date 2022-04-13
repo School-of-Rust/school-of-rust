@@ -73,6 +73,21 @@ body {
     padding: 20px;
 }
 
+a {
+    color: $color-yellow1;
+    text-decoration: 2.5px dotted underline;
+
+    &:hover {
+        color: $color-fg0;
+        border-color: $color-fg0;
+    }
+}
+
+em {
+    font-style: italic;
+    font-weight: 300;
+}
+
 h1 {
     font-family: 'header';
     font-weight: normal;
@@ -92,4 +107,32 @@ h3 {
     color: $color-green2;
     border-bottom: 2px dotted;
     border-color: $color-green2;
+}
+
+p {
+    code {
+        font-family: "code", monospace;
+        font-size: 0.8em;
+        line-height: 0.8em;
+        color: $color-fg2;
+        background-color: $color-bg0h;
+        border: 1px dotted $color-bg4;
+        padding-left: 4px;
+        padding-right: 4px;
+        padding-top: 2px;
+    }
+    em {
+        code {
+            color: $color-yellow2;
+            font-style: normal;
+            font-weight: normal;
+        }
+    }
+    strong {
+        code {
+            color: $color-purple2;
+            font-style: normal;
+            font-weight: normal;
+        }
+    }
 }
