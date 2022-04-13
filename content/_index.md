@@ -11,6 +11,28 @@ icon = "fa-solid fa-home"
 
 Lorem ipsum dolor sit amet, *consectetur* adipiscing elit. Fusce non eros sit amet est dapibus imperdiet. Nam ut ex molestie, *`Vec<T>`* tortor vel, tempor urna. Nunc ultrices odio sit amet mi condimentum, eu `pretium` neque auctor. Suspendisse **dapibus** rutrum felis, quis porttitor dui efficitur volutpat. Cras eleifend magna et lacus pellentesque dapibus. Nullam **`fringilla`** sodales ipsum. Vivamus a mi [https://google.com](https://google.com) eget nunc laoreet elementum et sit amet justo.
 
+```rs,linenos
+use std::io;
+use rand::Rng;
+
+fn main() {
+    println!("Guess the number!");
+
+    let secret_number = rand::thread_rng().gen_range(1..101);
+
+    println!("The secret number is: {}", secret_number);
+    println!("Please input your guess.");
+
+    let mut guess = String::new();
+
+    io::stdin()
+        .read_line(&mut guess)
+        .expect("Failed to read line");
+
+    println!("You guessed: {}", guess);
+}
+```
+
 ## A Second Section
 
 Vestibulum placerat sed nisl eget [maximus](https://#). Nam non purus erat. Aenean pellentesque rhoncus varius. Donec `malesuada` bibendum felis at vehicula. Suspendisse scelerisque mauris quis nibh congue interdum. Sed eu hendrerit nulla.

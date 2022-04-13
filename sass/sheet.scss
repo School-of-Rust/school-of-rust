@@ -186,3 +186,66 @@ blockquote {
 .right {
     float: right;
 }
+
+pre {
+    font-family: 'code';
+    font-size: 0.8em;
+    border: 1px dotted $color-bg4;
+    counter-reset: line;
+    background-color: $color-bg0h !important;
+
+    * {
+        font-family: inherit;
+    }
+
+    code table {
+        table-layout: fixed;
+        border-spacing: 0;
+
+        tbody tr {
+            td {
+                table-layout: fixed;
+                &:first-child {
+                    border-right: 1px solid $color-bg1;
+                    padding-right: 5px;
+                    padding-left: 5px;
+                    user-select: none;
+                }
+                &:last-child {
+                    padding-left: 10px;
+                    width: 100%;
+                }
+            }
+            mark {
+                background-color: $color-bg1 !important;
+                color: $color-fg0 !important;
+            }
+            &:first-child td {
+                padding-top: 5px;
+            }
+            &:last-child td {
+                padding-bottom: 5px;
+            }
+        }
+    }
+}
+
+.code-buttons {
+    position: relative;
+    float: right;
+    right: 5px;
+    height: 0;
+}
+
+.code-link {
+    font: inherit;
+    font-size: 0.75em;
+    color: $color-fg4;
+    text-decoration: none;
+    border: none;
+
+    &:hover {
+        color: $color-fg0;
+        cursor: pointer;
+    }
+}
