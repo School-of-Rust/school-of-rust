@@ -52,11 +52,12 @@ body {
 }
 .inner {
     flex: 1;
+    max-width: 100vw;
 }
 
 @media(max-width: 572px) {
     .inner-side {
-        display:none;
+        display: none;
     }
 }
 
@@ -193,6 +194,7 @@ pre {
     border: 1px dotted $color-bg4;
     counter-reset: line;
     background-color: $color-bg0h !important;
+    overflow-x: auto;
 
     * {
         font-family: inherit;
