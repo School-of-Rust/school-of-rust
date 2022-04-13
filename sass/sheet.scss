@@ -35,7 +35,7 @@ body {
 .lower {
     display: flex;
     flex-direction: row;
-    height: 100vh;
+    min-height: 100vh;
 }
 .lower-side {
     flex: 1;
@@ -67,7 +67,29 @@ body {
     font-family: 'regular';
     font-weight: 400;
     font-size: 18px;
+    line-height: 1.25;
 
     margin: 20px;
     padding: 20px;
+}
+
+h1 {
+    font-family: 'header';
+    font-weight: normal;
+    margin-top: 0;
+    border-bottom: 3px dotted;
+    border-color: $color-fg;
+    text-transform: uppercase;
+}
+
+h2 {
+    color: $color-yellow2;
+    border-bottom: 2px dotted;
+    border-color: $color-yellow2;
+}
+
+h3 {
+    color: $color-green2;
+    border-bottom: 2px dotted;
+    border-color: $color-green2;
 }

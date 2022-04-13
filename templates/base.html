@@ -2,7 +2,16 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>{{ config.title }}</title>
+    {% if section %}
+        <title>{{ config.title }} | {{ section.title }}</title>
+        <meta name="description" content="{{ section.description }}">
+    {% elif page %}
+        <title>{{ config.title }} | {{ page.title }}</title>
+        <meta name="description" content="{{ page.description }}">
+    {% else %}
+        <title>{{ config.title }}</title>
+        <meta name="description" content="{{ config.description }}">
+    {% endif %}
     <meta name="description" content="{{ config.description }}">
     <meta name="keywords" content="Rust, Programming, Education, Tutorials, Learning, Crates">
     <meta name="author" content="Chevy Ray Johnston">
