@@ -80,12 +80,6 @@ a {
     }
 }
 
-p > a {
-    color: $color-yellow1;
-    text-decoration: 2px dotted underline;
-    text-decoration-color: $color-bg3;
-}
-
 em {
     font-style: italic;
     font-weight: 300;
@@ -112,13 +106,17 @@ h3 {
     border-color: $color-green2;
 }
 
+ul {
+    line-height: 1.36;
+}
+
 p {
-    line-height: 1.35em;
+    line-height: 1.36;
 
     code {
         font-family: "code", monospace;
         font-size: 0.8em;
-        line-height: 0.8em;
+        line-height: 0.8;
         color: $color-fg2;
         background-color: $color-bg0h;
         border: 1px dotted $color-bg4;
@@ -146,6 +144,12 @@ p {
     img {
         max-width: 100%;
     }
+}
+
+p > a {
+    color: $color-yellow1;
+    text-decoration: 2px dotted underline;
+    text-decoration-color: $color-bg3;
 }
 
 iframe {

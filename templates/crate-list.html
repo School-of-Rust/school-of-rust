@@ -1,9 +1,0 @@
-{% set sect = get_section(path="crates/_index.md") %}
-{% for crate in sect.pages %}
-    {% if crate.title == page.title | default(value="") %}
-        {% set selected = "selected" %}
-    {% else %}
-        {% set selected = "" %}
-    {% endif %}
-    <a class="{{ selected }}" href="{{ crate.permalink }}"><i class="fa {{ crate.extra.icon }}"></i>{{ crate.title }}</a>
-{% endfor %}
