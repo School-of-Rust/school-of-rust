@@ -60,17 +60,17 @@ Praesent tempor gravida leo, in pulvinar ex fermentum ut. Aenean in imperdiet tu
 > 
 > &#8212; *Chevy Ray Johnston*
 
-> # HEADER 1
+> # <i class="fa-solid fa-circle-info"></i> NOTE
 > Donec in elementum urna. In faucibus non risus eu tempus. In elementum suscipit ipsum ultrices venenatis.
 >
 > ---
 >
 > Pellentesque condimentum ante ac elementum venenatis. Sed eget orci vel elit iaculis vulputate ut at mauris.
 
-> ## LINGO
+> ## <i class="fa-solid fa-comment"></i> LINGO
 > Donec in elementum urna. In faucibus non risus eu tempus. In elementum suscipit ipsum ultrices venenatis.
 
-> ### A WORD OF WARNING
+> ### <i class="fa-solid fa-triangle-exclamation"></i> WARNING
 > Donec in elementum urna. In faucibus non risus eu tempus. In elementum suscipit ipsum ultrices venenatis.
 
 Aliquam dapibus nunc vel sapien posuere fermentum. Vivamus quis sapien sollicitudin, consequat risus vitae, volutpat felis. Mauris odio erat, ultrices sit amet bibendum a, varius ut neque. Morbi fringilla condimentum ante, non efficitur odio volutpat a. Maecenas eget ante in leo commodo aliquet.

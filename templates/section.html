@@ -10,6 +10,13 @@
     {% for page in section.pages %}
         {% set icon = page.extra.icon | default(value="fa-solid fa-question") %}
         {{ macros::thumbnail(title=page.title, desc=page.description, icon=icon, link=page.permalink) }}
+        {{ page.summary | safe }}
+    {% endfor %}
+
+    {% for sect_name in section.subsections %}
+        {% set sect = get_section(path=sect_name) %}
+        {% set icon = sect.extra.icon | default(value="fa-solid fa-graduation-cap") %}
+        {{ macros::thumbnail(title=sect.title, desc=sect.description, icon=icon, link=sect.permalink) }}
     {% endfor %}
 
 {% endblock content %}

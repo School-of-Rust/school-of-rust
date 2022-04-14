@@ -1,10 +1,3 @@
-.fullscreen {
-  margin: 0;
-  padding: 0;
-  width: 100vw;
-  height: 100vh;
-}
-
 .flex-x {
   display: flex;
   flex-direction: row;
@@ -17,16 +10,6 @@
 
 .fill {
   flex: 1;
-}
-
-.scroll-x {
-  overflow-x: auto;
-  white-space: nowrap;
-}
-
-.scroll-y {
-  overflow-y: auto;
-  height: 0;
 }
 
 .center-x {
