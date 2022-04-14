@@ -1,17 +1,15 @@
 @import 'fonts';
 @import 'colors';
+@import 'flex-layout';
 
 body {
     background-color: $color-bg0h;
 }
 
 .upper {
-    display: flex;
-    flex-direction: row;
     padding-top: 5px;
 }
 .upper-side {
-    flex: 1;
     background-image: url(/img/bars_2.png);
     background-size: auto #{'min(8.5vw, 47px)'};
 }
@@ -19,10 +17,8 @@ body {
 .title {
     width: #{'min(100vw, 800px)'};
     height: #{'min(8.514vw, 47px)'};
-    display: flex;
 }
 .title-side {
-    flex: 1;
     background-image: url(/img/bars_3.png);
     background-size: auto #{'min(8.514vw, 47px)'};
 }
@@ -33,16 +29,9 @@ body {
 }
 
 .lower {
-    display: flex;
-    flex-direction: row;
     min-height: 100vh;
 }
-.lower-side {
-    flex: 1;
-}
 .lower-center {
-    display: flex;
-    flex-direction: row;
     width: #{'min(100vw, 800px)'};
 }
 
@@ -51,7 +40,6 @@ body {
     background-color: $color-yellow2;
 }
 .inner {
-    flex: 1;
     max-width: 100vw;
 }
 
@@ -327,13 +315,7 @@ pre {
 }
 
 .nav-bar {
-    display: flex;
-    flex-direction: row;
     padding-top: 20px;
-}
-
-.nav-side {
-    flex: 1;
 }
   
 .nav-link {
