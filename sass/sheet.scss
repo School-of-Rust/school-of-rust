@@ -177,6 +177,13 @@ blockquote hr {
     border-bottom: 2px dotted;
     margin-top: 10px;
     text-transform: uppercase;
+
+    i {
+        color: inherit;
+        font-size: 1em;
+        margin-right: 5px;
+        float: left;
+    }
 }
 
 blockquote {
@@ -209,12 +216,13 @@ blockquote {
         color: $color-red2;
         border-color: $color-red2;
     }
+}
 
-    i {
-        font-size: 1em;
-        margin-right: 5px;
-        float: left;
-    }
+.quote {
+    font-size: 1.4em;
+    color: $color-bg3;
+    margin-right: 10px;
+    float: left;
 }
 
 .right {
