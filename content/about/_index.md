@@ -2,7 +2,7 @@
 title = "About"
 description = "About the author."
 template = "section.html"
-page_template = "lesson.html"
+page_template = "page.html"
 sort_by = "weight"
 weight = 50
 

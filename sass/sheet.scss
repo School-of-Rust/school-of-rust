@@ -478,9 +478,9 @@ blockquote {
     }
 }
 
-.has-meta {
-    //margin-bottom: 0;
-}
+/*.has-meta {
+    margin-bottom: 0;
+}*/
 
 .page-meta {
     font-style: italic;
@@ -493,4 +493,72 @@ blockquote {
   
 #date {
     margin-right: 10px;
+}
+
+.prev-next {
+    border-top: 3px dotted $color-fg;
+    padding-top: 1em;
+    margin-top: 2em;
+
+    font-weight: 300;
+    color: $color-fg3;
+
+    a {
+        font-weight: bold;
+        color: $color-yellow1;
+        &:hover {
+            color: $color-fg;
+        }
+    }
+}
+
+.prev, .next {
+    > div {
+        margin-block-end: 0.25em;
+    }
+}
+
+.next {
+    text-align: right;
+}
+
+.thumbs {
+    margin: 0;
+
+    > div:first-child {
+        margin-right: 10px;
+        vertical-align: middle;
+    }
+}
+
+@media(max-width: 800px) {
+    .thumbs {
+        display: block;
+        > div:first-child {
+            margin-right: 0;
+        }
+    }
+}
+
+.section-thumbs {
+    vertical-align: middle;
+
+    > div {
+        vertical-align: middle;
+        display: inline-block;
+        width: 50%;
+        box-sizing: border-box;
+        padding-left: 0.5em;
+        padding-right: 0.5em;
+    }
+}
+
+@media(max-width: 572px) {
+    .section-thumbs {
+        > div {
+            display: block;
+            width: 100%;
+            padding-right: 0;
+        }
+    }
 }

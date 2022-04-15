@@ -5,4 +5,24 @@
 
 {{ section.content | safe }}
 
+<div class="section-thumbs">
+    <div>
+        {% set sect = get_section(path="lessons/_index.md") %}
+        {% set icon = sect.extra.icon | default(value="fa-solid fa-question") %}
+        {{ macros::thumbnail(title=sect.title, desc=sect.description, icon=icon, link=sect.permalink) }}
+    </div><div>
+        {% set sect = get_section(path="writing/_index.md") %}
+        {% set icon = sect.extra.icon | default(value="fa-solid fa-question") %}
+        {{ macros::thumbnail(title=sect.title, desc=sect.description, icon=icon, link=sect.permalink) }}
+    </div><div>
+        {% set sect = get_section(path="exercises/_index.md") %}
+        {% set icon = sect.extra.icon | default(value="fa-solid fa-question") %}
+        {{ macros::thumbnail(title=sect.title, desc=sect.description, icon=icon, link=sect.permalink) }}
+    </div><div>
+        {% set sect = get_section(path="contribute/_index.md") %}
+        {% set icon = sect.extra.icon | default(value="fa-solid fa-question") %}
+        {{ macros::thumbnail(title=sect.title, desc=sect.description, icon=icon, link=sect.permalink) }}
+    </div>
+</div>
+
 {% endblock content %}
