@@ -522,24 +522,6 @@ blockquote {
     text-align: right;
 }
 
-.thumbs {
-    margin: 0;
-
-    > div:first-child {
-        margin-right: 10px;
-        vertical-align: middle;
-    }
-}
-
-@media(max-width: 800px) {
-    .thumbs {
-        display: block;
-        > div:first-child {
-            margin-right: 0;
-        }
-    }
-}
-
 .section-thumbs {
     vertical-align: middle;
 
