@@ -477,3 +477,20 @@ blockquote {
         }
     }
 }
+
+.has-meta {
+    //margin-bottom: 0;
+}
+
+.page-meta {
+    font-style: italic;
+    font-weight: 400;
+    font-size: 0.9em;
+    color: $color-bg4;
+    text-align: right;
+    margin-block-end: 0.5em;
+}
+  
+#date {
+    margin-right: 10px;
+}

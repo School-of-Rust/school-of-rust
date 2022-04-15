@@ -3,23 +3,16 @@
 
 {% block content %}
 
-    {% set icon = page.extra.icon | default(value="fa-solid fa-pen-nib") %}
-    <h1 class="has-meta"><i class="{{ icon }}"></i> {{ page.title }}</h1>
     <div class="page-meta">
         <i class="fa-solid fa-calendar-days"></i> <span id="date">{{ page.date }}</span>
         <i class="fa-solid fa-clock"></i> {{ page.reading_time }} minute read
     </div>
 
-    {{ page.content | safe }}
+    {% set icon = page.extra.icon | default(value="fa-solid fa-pen-nib") %}
+    <h1 class="has-meta"><i class="{{ icon }}"></i> {{ page.title }}</h1>
+    
 
-    <div class="flex-x">
-        {% if page.earlier %}
-            <h1 class="fill prev">Prev Post</h1>
-        {% endif %}
-        {% if page.later %}
-            <h1 class="fill next">Next Post</h1>
-        {% endif %}
-    </div>
+    {{ page.content | safe }}
 
     <div class="flex-x">
         <div class="fill">
