@@ -544,3 +544,14 @@ blockquote {
         }
     }
 }
+
+#feedback {
+    color: $color-fg4;
+    font-weight: 300;
+    font-style: italic;
+    font-size: 0.9em;
+
+    a {
+        text-decoration: none;
+    }
+}

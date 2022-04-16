@@ -19,7 +19,7 @@
         {% set icon = sect.extra.icon | default(value="fa-solid fa-question") %}
         {{ macros::thumbnail(title=sect.title, desc=sect.description, icon=icon, link=sect.permalink) }}
     </div><div>
-        {% set sect = get_section(path="contribute/_index.md") %}
+        {% set sect = get_section(path="community/_index.md") %}
         {% set icon = sect.extra.icon | default(value="fa-solid fa-question") %}
         {{ macros::thumbnail(title=sect.title, desc=sect.description, icon=icon, link=sect.permalink) }}
     </div>
