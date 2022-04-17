@@ -24,7 +24,7 @@ I've released many games, the most recent is [Ikenfell](https://www.humblegames.
 on the *Nintendo Switch*, *Playstation 4*, *XBox One*, and PC.
 
 <div class="video">
-<iframe src="https://www.youtube.com/embed/kiWvNwuBbEE" title="YouTube video player" allowfullscreen></iframe>
+<iframe src="https://www.youtube.com/embed/kiWvNwuBbEE" title="Ikenfell Trailer" allowfullscreen></iframe>
 </div>
 
 ## Special Thanks
