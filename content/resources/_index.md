@@ -53,7 +53,7 @@ every step of the way and answering questions.
 on the development of Rust itself, as well as see what people are doing in different domains.
 
 - [Game Development in Rust](https://discord.gg/yNtPTb2) is a Discord server specifically for those interested in
-creating games. You can share your works-in-progress and even joins their monthly meetups.
+creating games. You can share your works-in-progress, tools, crates, and even join their monthly meetups.
 
 ### Practice & Exercises
 
