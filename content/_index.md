@@ -12,7 +12,5 @@ Welcome to *School of Rust*, an educational website with lessons and
 tutorials to help people learn the
 [Rust programming language](https://www.rust-lang.org/).
 
-Rust has a reputation for being hard to learn, so my goal is to provide
+Rust has a reputation for being hard to learn, so our goal is to provide
 *high quality* learning material to help break down those barriers.
-
-Let's learn Rust and write beautiful software and art together.
