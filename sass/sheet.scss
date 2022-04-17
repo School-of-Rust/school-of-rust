@@ -558,6 +558,10 @@ blockquote {
     font-size: 0.9em;
 
     a {
+        color: $color-blue2;
         text-decoration: none;
+        &:hover {
+            color: $color-fg;
+        }
     }
 }
