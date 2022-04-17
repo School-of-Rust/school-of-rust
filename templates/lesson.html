@@ -2,44 +2,10 @@
 {% import "macros.html" as macros %}
 
 {% block content %}
-    {% set icon = page.extra.icon | default(value="fa-solid fa-graduation-cap") %}
-    <h1 class="has-meta"><i class="{{ icon }}"></i> {{ page.title }}</h1>
-    <div class="page-meta">
-        <i class="fa-solid fa-calendar-days"></i> <span id="date">{{ page.date }}</span>
-        <i class="fa-solid fa-clock"></i> {{ page.reading_time }} minute read
-    </div>
-
+    {% include "page-title.html" %}
     {{ page.content | safe }}
-
-    <p>
-        <div class="prev-next flex-x">
-            <div class="prev fill">
-                {% if page.lighter %}
-                    <div>
-                        <i class="fa-solid fa-arrow-left-long"></i> Prev Lesson
-                    </div>
-                    <a href="{{ page.lighter.permalink }}">
-                        {% set icon = page.lighter.extra.icon | default(value="fa-solid fa-graduation-cap") %}
-                        <i class="{{ icon }}"></i> {{ page.lighter.title }}
-                    </a>
-                {% endif %}
-            </div>
-            <div class="next fill">
-                {% if page.heavier %}
-                    <div>
-                        Next Lesson <i class="fa-solid fa-arrow-right-long"></i>
-                    </div>
-                    <a href="{{ page.heavier.permalink }}">
-                        {% set icon = page.heavier.extra.icon | default(value="fa-solid fa-graduation-cap") %}
-                        <i class="{{ icon }}"></i> {{ page.heavier.title }}
-                    </a>
-                {% endif %}
-            </div>
-        </div>
-    </p>
-
+    {{ macros::prev_next(prev = page.lighter, next = page.heavier, singular = "Lesson") }}
     <hr>
-
-    <p id="feedback">{{ page.path }}</p>
+    {% include "feedback.html" %}
 
 {% endblock content %}

@@ -2,40 +2,10 @@
 {% import "macros.html" as macros %}
 
 {% block content %}
-    {% set icon = page.extra.icon | default(value="fa-solid fa-graduation-cap") %}
-    <h1 class="has-meta"><i class="{{ icon }}"></i> {{ page.title }}</h1>
-    <div class="page-meta">
-        <i class="fa-solid fa-calendar-days"></i> <span id="date">{{ page.date }}</span>
-        <i class="fa-solid fa-clock"></i> {{ page.reading_time }} minute read
-    </div>
-
+    {% include "page-title.html" %}
     {{ page.content | safe }}
-
-    <p>
-        <div class="prev-next flex-x">
-            <div class="prev fill">
-                {% if page.earlier %}
-                    <div>
-                        <i class="fa-solid fa-arrow-left-long"></i> Prev Post
-                    </div>
-                    <a href="{{ page.earlier.permalink }}">
-                        {% set icon = page.earlier.extra.icon | default(value="fa-solid fa-graduation-cap") %}
-                        <i class="{{ icon }}"></i> {{ page.earlier.title }}
-                    </a>
-                {% endif %}
-            </div>
-            <div class="next fill">
-                {% if page.later %}
-                    <div>
-                        Next Post <i class="fa-solid fa-arrow-right-long"></i>
-                    </div>
-                    <a href="{{ page.later.permalink }}">
-                        {% set icon = page.later.extra.icon | default(value="fa-solid fa-graduation-cap") %}
-                        <i class="{{ icon }}"></i> {{ page.later.title }}
-                    </a>
-                {% endif %}
-            </div>
-        </div>
-    </p>
+    {{ macros::prev_next(prev = page.earlier, next = page.later, singular = "Post") }}
+    <hr>
+    {% include "feedback.html" %}
 
 {% endblock content %}

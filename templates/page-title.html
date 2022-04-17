@@ -1,0 +1,6 @@
+{% set icon = page.extra.icon | default(value="fa-solid fa-question") %}
+<h1 class="has-meta"><i class="{{ icon }}"></i> {{ page.title }}</h1>
+<div class="page-meta">
+    <i class="fa-solid fa-calendar-days"></i> Updated <span id="date">{{ page.date }}</span>
+    <i class="fa-solid fa-clock"></i> {{ page.reading_time }} minute read
+</div>

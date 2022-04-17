@@ -19,4 +19,8 @@
         {{ macros::thumbnail(title=sect.title, desc=sect.description, icon=icon, link=sect.permalink) }}
     {% endfor %}
 
+    <p><hr></p>
+
+    {% include "feedback.html" %}
+
 {% endblock content %}

@@ -20,3 +20,32 @@
     {% endif %}
     <a class="fill {{ disabled }}" href="{{ url }}" target="_blank"><i class="{{ icon }}"></i> <div>{{ text }}</div></a>
 {% endmacro crate %}
+
+{% macro prev_next(prev, next, singular) %}
+    <p>
+        <div class="prev-next flex-x">
+            <div class="prev fill">
+                {% if prev %}
+                    <div>
+                        <i class="fa-solid fa-arrow-left-long"></i> Prev {{ singular }}
+                    </div>
+                    <a href="{{ prev.permalink }}">
+                        {% set icon = prev.extra.icon | default(value="fa-solid fa-question") %}
+                        <i class="{{ icon }}"></i> {{ prev.title }}
+                    </a>
+                {% endif %}
+            </div>
+            <div class="next fill">
+                {% if next %}
+                    <div>
+                        Next {{ singular }} <i class="fa-solid fa-arrow-right-long"></i>
+                    </div>
+                    <a href="{{ next.permalink }}">
+                        {% set icon = next.extra.icon | default(value="fa-solid fa-question") %}
+                        <i class="{{ icon }}"></i> {{ next.title }}
+                    </a>
+                {% endif %}
+            </div>
+        </div>
+    </p>
+{% endmacro prev_next %}
