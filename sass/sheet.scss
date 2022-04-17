@@ -216,6 +216,12 @@ blockquote {
         color: $color-red2;
         border-color: $color-red2;
     }
+
+    h4 {
+        @extend .blockquote-h;
+        color: $color-fg4;
+        border-color: $color-fg4;
+    }
 }
 
 .quote {

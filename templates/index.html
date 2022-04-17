@@ -21,28 +21,61 @@
     </div>
 </div>
 
-<h2>Community</h2>
+<h3>Community</h3>
 
-Learning Rust can be hard, and you don't have to do it alone. 
+<p>
+    <blockquote>
+        <h2><i class="fa-brands fa-discord"></i> Join the Discord</h2>
+        <p>
+            Join our <a href="https://twitter.com/SchoolRust" target="_blank">Discord server</a> where you can
+            ask for help, help others, and share your creations with the community. The best place to get live help.
+        </p>
+    </blockquote>
+</p>
 
-<div class="section-thumbs">
-    <div>
-        {{
-            macros::thumbnail(
-            title="Discord",
-            desc="Ask for help, help others, and share your creations with the community.",
-            icon="fa-brands fa-discord",
-            link="https://discord.gg/wwrFVYaqhr")
-        }}
-    </div><div>
-        {{
-            macros::thumbnail(
-            title="Twitter",
-            desc="Follow us on Twitter to see when there are new lessons and articles.",
-            icon="fa-brands fa-twitter",
-            link="https://twitter.com/SchoolRust")
-        }}
-    </div>
-</div>
+<p>
+    <blockquote>
+        <h1><i class="fa-brands fa-twitter"></i> Follow us on Twitter</h1>
+        <p>
+            Follow <a href="https://twitter.com/SchoolRust" target="_blank">@SchoolRust</a> and stay up to date on new
+            lessons & articles as they come out. Retweets are appreciated to help spread the word!
+        </p>
+    </blockquote>
+</p>
+
+<p>
+    <blockquote>
+        <h4><i class="fa-brands fa-github"></i> Check Out the Github</h4>
+        <p>
+            Check out our <a href="https://github.com/school-of-rust" target="_blank">Github</a> where solutions
+            to the exercises can be found, as well as the
+            <a href="https://github.com/School-of-Rust/school-of-rust" target="_blank">source code</a> to the website itself.
+            Want to see a change? Submit it!
+        </p>
+    </blockquote>
+</p>
+
+<h3>Contribute</h3>
+
+<p>
+    Contributions and feedback are highly appreciated. Every lesson and article has a call to provide feedback as well
+    as a link to the source file for the article itself. If you find typos, errors in code, or even just confusing
+    sentences or examples, submitting pull requests on those articles can help me improve this site's content.
+</p>
+
+<p>
+    {% set sect = get_section(path="resources/_index.md") %}
+    Also, suggestions and additions to the
+    <a href="{{ sect.permalink }}" target="_blank"><i class="{{ sect.extra.icon }}"></i> Resources</a> page are
+    encouraged, as I would love to keep that up to date with the latest and greatest learning material.
+</p>
+
+<p>
+    <blockquote>
+        <p><i class="fa-solid fa-quote-left quote"></i>It's not a real school, but it's still real cool!<i class="right fa-solid fa-quote-right quote"></i></p>
+        <p>&#8212; <em>Chevy Ray (Dean of Students)</em></p>
+    </blockquote>
+</p>
+
 
 {% endblock content %}
