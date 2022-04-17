@@ -141,7 +141,7 @@ p {
     }
 }
 
-p > a {
+p > a, li > a {
     color: $color-yellow1;
     text-decoration: 2px dotted underline;
     text-decoration-color: $color-bg3;
