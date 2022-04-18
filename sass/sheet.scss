@@ -314,6 +314,10 @@ pre {
         text-decoration: none;
         font-family: "code", monospace;
         font-size: 0.9em;
+
+        &:hover {
+            color: $color-fg;
+        }
     }
   
     i {
