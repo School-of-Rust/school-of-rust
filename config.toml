@@ -1,5 +1,5 @@
 # The URL the site will be built for
-base_url = "https://school-of-rust.pages.dev/"
+base_url = "https://rust-school.io/"
 
 # The site title and description; used in feeds by default.
 title = "School of Rust"
