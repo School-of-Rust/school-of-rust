@@ -16,6 +16,7 @@ build_search_index = true
 
 # Generate an RSS feed called atom.xml at the website's root
 generate_feed = true
+feed_filename = "rss.xml"
 
 [markdown]
 # Whether to do syntax highlighting
