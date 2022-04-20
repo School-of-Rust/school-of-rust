@@ -243,13 +243,26 @@ pre {
     background-color: $color-bg0h !important;
     overflow-x: auto;
 
+    padding-top: 5px;
+    padding-bottom: 5px;
+
     * {
         font-family: inherit;
+    }
+
+    code > span {
+        padding-left: 5px;
+        padding-right: 5px;
     }
 
     code table {
         table-layout: fixed;
         border-spacing: 0;
+
+        tbody {
+            padding-top: 5px;
+            padding-bottom: 5px;
+        }
 
         tbody tr {
             td {
@@ -269,12 +282,12 @@ pre {
                 background-color: $color-bg1 !important;
                 color: $color-fg0 !important;
             }
-            &:first-child td {
+            /*&:first-child td {
                 padding-top: 5px;
             }
             &:last-child td {
                 padding-bottom: 5px;
-            }
+            }*/
         }
     }
 }

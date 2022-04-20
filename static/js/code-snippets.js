@@ -3,6 +3,10 @@ let codes = Array.from(document.getElementsByTagName("pre"));
 for (let i = 0; i < codes.length; ++i) {
 
     const code = codes[i];
+
+    if (code.getElementsByTagName("table").length == 0)
+        continue;
+
     code.setAttribute("class", code.getAttribute("class") + " code");
 
     // Get the code's raw text without HTML tags and line numbers
