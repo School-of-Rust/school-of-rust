@@ -10,4 +10,5 @@ weight = 10
 icon = "fa-solid fa-door-open"
 +++
 
-`TODO`
+This series will get you installed with Rust and all the basic tools
+you need to get writing and compiling code.
