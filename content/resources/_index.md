@@ -41,6 +41,9 @@ using Rust for machine learning.
 streams. These are often videos of him developing entire crates or systems, and walking the viewer through it
 every step of the way and answering questions.
 
+- [Let's Get Rusty](https://www.youtube.com/channel/UCSp-OaMpsO8K0KkOqyBl7_w) is a YouTube channel with many
+videos demonstrating various features of Rust and how to code idiomatically.
+
 ### Conferences
 
 - [RustConf](https://rustconf.com/) is an annual conference for Rust held in Portland.
