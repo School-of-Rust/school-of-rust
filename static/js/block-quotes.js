@@ -5,7 +5,7 @@ for (let i = 0; i < quotes.length; ++i) {
     const ps = Array.from(quote.getElementsByTagName("p"));
     for (let j = 0; j < ps.length; ++j) {
         const p = ps[j];
-        let text = p.innerText;
+        let text = p.innerHTML;
         if (text.startsWith('"') && text.endsWith('"')) {
             const left = document.createElement("i");
             left.setAttribute("class", "fa-solid fa-quote-left quote");
