@@ -10,5 +10,6 @@ weight = 20
 icon = "fa-solid fa-pen-nib"
 +++
 
-Whether I'm musing about Rust, exploring design patterns, game development,
-or discovering some great new crates, this is a place for all of it.
+Whether I'm musing about Rust, commenting on the latest Rust news,
+exploring design patterns, game development, or discovering great
+new crates, this is a place for all of it.
