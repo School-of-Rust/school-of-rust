@@ -1,6 +1,6 @@
 +++
 title = "Resources"
-description = "Other helpful resources & places for learning Rust."
+description = "Other helpful resources and places for learning Rust."
 template = "section.html"
 page_template = "page.html"
 sort_by = "date"

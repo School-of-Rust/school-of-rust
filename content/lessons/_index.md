@@ -1,6 +1,6 @@
 +++
 title = "Lessons"
-description = "Learn the Rust programming language & get coding!"
+description = "Learn the Rust programming language and get coding!"
 template = "section.html"
 page_template = "lesson.html"
 sort_by = "weight"

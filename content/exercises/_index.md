@@ -1,6 +1,6 @@
 +++
 title = "Exercises"
-description = "Coding exercises & example projects to practice Rust."
+description = "Coding exercises and example projects to practice Rust."
 template = "section.html"
 page_template = "page.html"
 sort_by = "date"

@@ -1,6 +1,6 @@
 +++
 title = "Writing"
-description = "Where I post tips, tricks, & general musings about Rust."
+description = "Where I post tips, tricks, and general musings about Rust."
 template = "section.html"
 page_template = "writing.html"
 sort_by = "date"
