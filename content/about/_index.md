@@ -12,11 +12,12 @@ icon = "fa-solid fa-heart"
 
 I'm Chevy Ray, a coder, writer, artist, and game designer from Canada.
 
-I've been using Rust for about 3 years now, and it's become my go-to language
-for every new project I start up.
+I've been passionately using Rust for several years now, and use it every opportunity I can.
+I consider myself a fairly advanced *Rustacean*, though my knowledge is thin when
+it comes to certain domains, such as web or async programming.
 
-I currently work for [Extremely OK Games](https://exok.com/), where we are developing
-an action-exploration game called [Earthblade](https://exok.com/games/earthblade/).
+I'm primarily a game developer, and currently work for [Extremely OK Games](https://exok.com/),
+where we are developing an action-exploration game called [Earthblade](https://exok.com/games/earthblade/).
 
 ![alt text](/img/about/earthblade_logo.jpg "Earthblade Logo")
 
@@ -27,6 +28,3 @@ on the *Nintendo Switch*, *Playstation 4*, *XBox One*, and PC.
 <iframe src="https://www.youtube.com/embed/kiWvNwuBbEE" title="Ikenfell Trailer" allowfullscreen></iframe>
 </div>
 
-## Special Thanks
-
-Other thanks...
