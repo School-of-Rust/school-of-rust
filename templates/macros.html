@@ -49,3 +49,21 @@
         </div>
     </p>
 {% endmacro prev_next %}
+
+{% macro lesson_rank(name, rank, ico) %}
+    <h2><i class="{{ ico }}"></i> {{ name }}</h2>
+    {% for sect_name in section.subsections %}
+        {% set sect = get_section(path=sect_name) %}
+        {% if sect.extra.rank == rank %}
+            {% set icon = sect.extra.icon | default(value="fa-solid fa-graduation-cap") %}
+            {{ macros::thumbnail(title=sect.title, desc=sect.description, icon=icon, link=sect.permalink) }}
+        {% endif %}
+    {% endfor %}
+    {% for page in section.pages %}
+        {% if page.extra.rank == rank %}
+            {% set icon = page.extra.icon | default(value="fa-solid fa-question") %}
+            {{ macros::thumbnail(title=page.title, desc=page.description, icon=icon, link=page.permalink) }}
+            {{ page.summary | safe }}
+        {% endif %}
+    {% endfor %}
+{% endmacro lesson_rank %}

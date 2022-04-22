@@ -19,6 +19,20 @@ to highlight some of the best ones here!
 > submit a [Github pull request](https://github.com/School-of-Rust/school-of-rust/blob/main/content/resources/_index.md)
 > directly to this page!
 
+### Code Editors
+
+- [Visual Studio Code](https://visualstudiomagazine.com/articles/2020/04/22/rust-vs-code.aspx) has great Rust support
+and is the [most-used](https://visualstudiomagazine.com/articles/2020/04/22/rust-vs-code.aspx) code editor in the Rust community.
+
+- [IntelliJ](https://www.jetbrains.com/rust/) also has great Rust features, and *CLion* is my personal editor of
+choice.
+
+- [Vim](https://github.com/rust-lang/rust.vim) users will be pleased to know there is good support for Rust, and it is
+also one of the most popular choices.
+
+- The [Rust Tools](https://www.rust-lang.org/tools) page on the offical website has more options if you don't use any
+of the above.
+
 ### Other Websites
 
 - [Crates.io](https://crates.io/) is the official Rust package depository. It seems obvious to put here, but everyone

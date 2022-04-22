@@ -21,6 +21,7 @@ I've noticed that a common question asked by people learning Rust is something l
 My goal here is to have series' of exercises that provide exactly this. These will
 usually be in the form of small example programs they will write. These programs
 will have clearly defined goals and parameters, so the author will be able to build
-them to spec.
+them and test if they work correctly.
 
-There are no exercises yet, as I am focused on building up the actual lessons first.
+> ### WORK IN PROGRESS
+> There are no exercises yet, as I am focused on creating lessons first.
