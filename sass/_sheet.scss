@@ -473,7 +473,7 @@ pre {
 
 .content > table {
     @extend .table-style;
-    display: block;
+    display: inline-block;
     max-width: 100%;
     overflow-x: auto;
 }
