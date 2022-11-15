@@ -1,7 +1,3 @@
-@import 'fonts';
-@import 'colors';
-@import 'flex-layout';
-
 body {
     background-color: $color-bg0h;
 }
@@ -580,5 +576,19 @@ blockquote {
         &:hover {
             color: $color-fg;
         }
+    }
+}
+
+.mode-on {
+    pointer-events: none;
+    opacity: 0.5;
+}
+
+.mode-off {
+    pointer-events: auto;
+    opacity: 1.0;
+    &:hover {
+        color: $color-fg0;
+        cursor: pointer;
     }
 }
