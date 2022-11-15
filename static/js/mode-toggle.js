@@ -1,10 +1,21 @@
+localStorage.clear();
 const theme = localStorage.getItem("theme");
 const sheetLink = document.querySelector("#sheet-link");
 
 if (theme == "light") {
-    sheetLink.href = "/light.css"
+    sheetLink.href = "/light.css";
+} else if (theme == "dark") {
+    sheetLink.href = "/dark.css";
 } else {
-    sheetLink.href = "/dark.css"
+    sheetLink.href = "/dark.css";
+
+    // TODO: detect preferred OS mode?
+    /*const pref = window.matchMedia('(prefers-color-scheme: light)');
+    if (pref.matches) {
+        sheetLink.href = "/light.css";
+    } else {
+        sheetLink.href = "/dark.css";
+    }*/
 }
 
 window.onload = function() {
