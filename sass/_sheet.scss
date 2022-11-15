@@ -575,6 +575,15 @@ blockquote {
     }
 }
 
+.light-dark {
+    font-size: 1.5em;
+
+    i {
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+}
+
 .mode-on {
     pointer-events: none;
     opacity: 0.5;
