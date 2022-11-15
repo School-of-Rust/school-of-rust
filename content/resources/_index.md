@@ -33,6 +33,10 @@ also one of the most popular choices.
 - The [Rust Tools](https://www.rust-lang.org/tools) page on the offical website has more options if you don't use any
 of the above.
 
+## Other Header
+
+Testing another header.
+
 ### Other Websites
 
 - [Crates.io](https://crates.io/) is the official Rust package depository. It seems obvious to put here, but everyone

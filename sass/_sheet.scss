@@ -47,7 +47,7 @@ body {
 
 .content {
     background-color: $color-bg0;
-    color: $color-fg;
+    color: $color-fg1;
     
     font-family: 'regular';
     font-weight: 400;
@@ -74,7 +74,7 @@ h1 {
     font-weight: normal;
     margin-top: 0;
     border-bottom: 3px dotted;
-    border-color: $color-fg;
+    border-color: $color-fg1;
     text-transform: uppercase;
 }
 
@@ -85,9 +85,11 @@ h2 {
 }
 
 h3 {
-    color: $color-green2;
+    //color: $color-green2;
+    color: $color-fg1;
     border-bottom: 2px dotted;
-    border-color: $color-green2;
+    //border-color: $color-green2;
+    border-color: $color-bg4;
 }
 
 ul, ol {
@@ -102,7 +104,8 @@ li {
 }
 
 p {
-    line-height: 1.36;
+    //line-height: 1.36;
+    line-height: 1.6;
 
     code {
         font-family: "code", monospace;
@@ -325,7 +328,7 @@ pre {
         font-size: 0.9em;
 
         &:hover {
-            color: $color-fg;
+            color: $color-fg1;
         }
     }
   
@@ -421,11 +424,11 @@ pre {
         }
     
         .thumb-title {
-            color: $color-fg;
+            color: $color-fg1;
         }
     
         .thumb-desc {
-            color: $color-fg;
+            color: $color-fg1;
         }
     }
 }
@@ -444,7 +447,7 @@ pre {
     thead {
         text-align: left;
         background-color: $color-bg1;
-        color: $color-fg;
+        color: $color-fg1;
         th {
             padding: 5px 20px 5px 20px;
         }
@@ -515,7 +518,7 @@ blockquote {
 }
 
 .prev-next {
-    border-top: 3px dotted $color-fg;
+    border-top: 3px dotted $color-fg1;
     padding-top: 1em;
     margin-top: 2em;
 
@@ -526,7 +529,7 @@ blockquote {
         font-weight: bold;
         color: $color-yellow1;
         &:hover {
-            color: $color-fg;
+            color: $color-fg1;
         }
     }
 }
@@ -574,7 +577,7 @@ blockquote {
         color: $color-blue2;
         text-decoration: none;
         &:hover {
-            color: $color-fg;
+            color: $color-fg1;
         }
     }
 }
