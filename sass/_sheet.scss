@@ -473,6 +473,9 @@ pre {
 
 .content > table {
     @extend .table-style;
+    display: block;
+    max-width: 100%;
+    overflow-x: scroll;
 }
 
 blockquote {
