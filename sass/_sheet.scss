@@ -104,13 +104,11 @@ li {
 }
 
 p {
-    //line-height: 1.36;
     line-height: 1.6;
 
     code {
         font-family: "code", monospace;
         font-size: 0.8em;
-        line-height: 0.8;
         color: $color-fg2;
         background-color: $color-bg0h;
         border: 1px dotted $color-bg4;
@@ -242,16 +240,11 @@ pre {
     background-color: $color-bg0h !important;
     overflow-x: auto;
 
-    padding-top: 5px;
-    padding-bottom: 5px;
+    padding: 10px;
+    line-height: 1.5;
 
     * {
         font-family: inherit;
-    }
-
-    code > span {
-        padding-left: 5px;
-        padding-right: 5px;
     }
 
     code table {
@@ -268,8 +261,8 @@ pre {
                 table-layout: fixed;
                 &:first-child {
                     border-right: 1px solid $color-bg1;
-                    padding-right: 5px;
-                    padding-left: 5px;
+                    padding-right: 10px;
+                    padding-left: 0;
                     user-select: none;
                 }
                 &:last-child {

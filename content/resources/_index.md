@@ -35,7 +35,35 @@ of the above.
 
 ## Other Header
 
-Testing another header.
+Testing another header with some `SpecialCode` blocks after it, and some extra words at the end of this sentences so
+that it wraps around at least once.
+
+```rust
+fn main() {
+    // and a comment!
+    println!("With some rust code in it!");
+    println!("Let's do a few lines so we can test how compact it is.");
+}
+```
+
+```rust,linenos
+fn main() {
+    /* and a block
+    comment here! */
+    println!("And this time with line numbers!");
+    println!("Let's do a few lines so we can test how compact it is.");
+}
+```
+
+Followed by a table to make sure I'm not breaking this...
+
+| type    | pixel format         | something else |
+|---------|----------------------|----------------|
+| u8      | TextureId::default() | blah           |
+| sampler | Sampler::new()       | 12345          |
+| float   | 0.0                  | "a string"     |
+
+And some text afterwards.
 
 ### Other Websites
 
