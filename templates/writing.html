@@ -4,7 +4,7 @@
 {% block content %}
     {% include "page-title.html" %}
     {{ page.content | safe }}
-    {{ macros::prev_next(prev = page.earlier, next = page.later, singular = "Post") }}
+    {{ macros::prev_next(prev = page.lower, next = page.higher, singular = "Post") }}
     <hr>
     {% include "feedback.html" %}
 
