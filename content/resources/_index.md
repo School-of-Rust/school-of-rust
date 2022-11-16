@@ -35,7 +35,7 @@ of the above.
 
 ## Other Header
 
-Testing another header with some `SpecialCode` blocks after it, and some extra words at the end of this sentences so
+Testing another header with some `SpecialCode` blocks *`LikeThis`* and **`ThisOneToo`** after it, and some extra words at the end of this sentences so
 that it wraps around at least once.
 
 ```rust

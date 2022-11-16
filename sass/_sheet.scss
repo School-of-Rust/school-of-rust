@@ -1,5 +1,5 @@
 body {
-    background-color: $color-bg0h;
+    background-color: $color-page-bg;
 }
 
 .upper {
@@ -33,7 +33,7 @@ body {
 
 .inner-side {
     width: #{'min(1.75vw, 10px)'};
-    background-color: $color-yellow2;
+    background-color: $color-sidebar;
 }
 .inner {
     max-width: 100vw;
@@ -46,8 +46,8 @@ body {
 }
 
 .content {
-    background-color: $color-bg0;
-    color: $color-fg1;
+    background-color: $color-content-bg;
+    color: $color-content-text;
     
     font-family: 'regular';
     font-weight: 400;
@@ -59,9 +59,6 @@ body {
 
 a {
     text-decoration: none;
-    &:hover {
-        color: $color-fg0;
-    }
 }
 
 em {
@@ -74,22 +71,20 @@ h1 {
     font-weight: normal;
     margin-top: 0;
     border-bottom: 3px dotted;
-    border-color: $color-fg1;
+    border-color: $color-h1;
     text-transform: uppercase;
 }
 
 h2 {
-    color: $color-yellow2;
+    color: $color-h2;
     border-bottom: 2px dotted;
-    border-color: $color-yellow2;
+    border-color: $color-h2;
 }
 
 h3 {
-    //color: $color-green2;
-    color: $color-fg1;
+    color: $color-h3;
     border-bottom: 2px dotted;
-    //border-color: $color-green2;
-    border-color: $color-bg4;
+    border-color: $color-h3;
 }
 
 ul, ol {
@@ -99,7 +94,7 @@ li {
     padding-left: 2px;
 
     &::marker {
-        color: $color-fg4;
+        color: $color-list-marker;
     }
 }
 
@@ -109,9 +104,9 @@ p {
     code {
         font-family: "code", monospace;
         font-size: 0.8em;
-        color: $color-fg2;
-        background-color: $color-bg0h;
-        border: 1px dotted $color-bg4;
+        color: $color-code-tag-text;
+        background-color: $color-code-tag-bg;
+        border: 1px dotted $color-code-tag-border;
         padding-left: 4px;
         padding-right: 4px;
         padding-top: 2px;
@@ -119,7 +114,7 @@ p {
 
     em {
         code {
-            color: $color-yellow2;
+            color: $color-code-tag-em;
             font-style: normal;
             font-weight: normal;
         }
@@ -127,7 +122,7 @@ p {
 
     strong {
         code {
-            color: $color-purple2;
+            color: $color-code-tag-strong;
             font-style: normal;
             font-weight: normal;
         }
@@ -139,9 +134,12 @@ p {
 }
 
 p > a, li > a {
-    color: $color-yellow1;
     text-decoration: 2px dotted underline;
-    text-decoration-color: $color-bg3;
+    text-decoration-color: $color-link-underline;
+    color: $color-link;
+    &:hover {
+        color: $color-link-hover;
+    }
 }
 
 .video {
@@ -161,11 +159,11 @@ p > a, li > a {
 
 hr {
     border: none;
-    border-bottom: 2px dotted $color-bg3;
+    border-bottom: 2px dotted $color-hr;
 }
 
 blockquote hr {
-    border-color: $color-bg4;
+    border-color: $color-quote-hr;
 }
 
 .blockquote-h {
@@ -184,8 +182,8 @@ blockquote hr {
 }
 
 blockquote {
-    color: $color-fg3;
-    background-color: $color-bg1;
+    color: $color-quote-text;
+    background-color: $color-quote-bg;
     border-radius: 10px;
     margin-left: 10px;
     margin-right: 10px;
@@ -198,32 +196,32 @@ blockquote {
 
     h1 {
         @extend .blockquote-h;
-        color: $color-blue2;
-        border-color: $color-blue2;
+        color: $color-quote-h1;
+        border-color: $color-quote-h1;
     }
 
     h2 {
         @extend .blockquote-h;
-        color: $color-purple2;
-        border-color: $color-purple2;
+        color: $color-quote-h2;
+        border-color: $color-quote-h2;
     }
 
     h3 {
         @extend .blockquote-h;
-        color: $color-red2;
-        border-color: $color-red2;
+        color: $color-quote-h3;
+        border-color: $color-quote-h3;
     }
 
     h4 {
         @extend .blockquote-h;
-        color: $color-fg4;
-        border-color: $color-fg4;
+        color: $color-quote-h4;
+        border-color: $color-quote-h4;
     }
 }
 
 .quote {
     font-size: 1.4em;
-    color: $color-bg3;
+    color: $color-quotation-mark;
     margin-right: 10px;
     float: left;
 }
@@ -235,9 +233,9 @@ blockquote {
 pre {
     font-family: 'code';
     font-size: 0.8em;
-    border: 1px dotted $color-bg4;
+    border: 1px dotted $color-code-border;
     counter-reset: line;
-    background-color: $color-bg0h !important;
+    background-color: $color-code-bg !important;
     overflow-x: auto;
 
     padding: 10px;
@@ -260,7 +258,7 @@ pre {
             td {
                 table-layout: fixed;
                 &:first-child {
-                    border-right: 1px solid $color-bg1;
+                    border-right: 1px solid $color-linenos-separator;
                     padding-right: 10px;
                     padding-left: 0;
                     user-select: none;
@@ -271,15 +269,9 @@ pre {
                 }
             }
             mark {
-                background-color: $color-bg1 !important;
-                color: $color-fg0 !important;
+                background-color: $color-gray4 !important;
+                color: $color-gray12 !important;
             }
-            /*&:first-child td {
-                padding-top: 5px;
-            }
-            &:last-child td {
-                padding-bottom: 5px;
-            }*/
         }
     }
 }
@@ -294,12 +286,12 @@ pre {
 .code-link {
     font: inherit;
     font-size: 0.75em;
-    color: $color-fg4;
+    color: $color-copy-link;
     text-decoration: none;
     border: none;
 
     &:hover {
-        color: $color-fg0;
+        color: $color-copy-link-hover;
         cursor: pointer;
     }
 }
@@ -310,18 +302,18 @@ pre {
     line-height: 1.4em;
     margin-top: 20px;
     margin-bottom: 120px;
-    color: $color-bg4;
+    color: $color-footer-text;
     text-align: center;
     
   
     a {
-        color: $color-blue2;
+        color: $color-footer-link;
         text-decoration: none;
         font-family: "code", monospace;
         font-size: 0.9em;
 
         &:hover {
-            color: $color-fg1;
+            color: $color-footer-link-hover;
         }
     }
   
@@ -347,7 +339,7 @@ pre {
     font-size: #{'min(3vw, 20px)'};
     font-weight: bold;
     line-height: 1.2em;
-    color: $color-blue1;
+    color: $color-nav-link;
 
     text-align: center;
     text-transform: uppercase;
@@ -360,7 +352,7 @@ pre {
     border: none;
 
     &:hover {
-        color: $color-yellow2;
+        color: $color-nav-link-hover;
     }
 
     &.underline {
@@ -368,8 +360,8 @@ pre {
     }
 
     &.selected {
-        border-color: $color-yellow2;
-        color: $color-yellow2;
+        border-color: $color-nav-link-selected;
+        color: $color-nav-link-selected;
         pointer-events: none;
     }
 
@@ -381,7 +373,7 @@ pre {
 .thumb {
     display: block;
     user-select: none;
-    border: 2px solid $color-bg2;
+    border: 2px solid $color-thumb-border;
     border-radius: 5px;
     padding: 10px;
     text-decoration: none;
@@ -391,37 +383,37 @@ pre {
     .thumb-icon {
         vertical-align: middle;
         font-size: 1.5em;
-        color: $color-bg4;
+        color: $color-thumb-icon;
         width: 1.4em;
     }
   
     .thumb-title {
         font-weight: 500;
-        color: $color-yellow1;
+        color: $color-thumb-title;
         padding-bottom: 5px;
     }
   
     .thumb-desc {
-        color: $color-fg3;
+        color: $color-thumb-desc;
         font-weight: 300;
         font-size: 0.95em;
     }
   
     &:hover {
         cursor: pointer;
-        background-color: $color-bg0h;
-        border-color: $color-bg4;
+        background-color: $color-gray1;
+        border-color: $color-gray7;
     
         .thumb-icon {
-            color: $color-fg3;
+            color: $color-gray9;
         }
     
         .thumb-title {
-            color: $color-fg1;
+            color: $color-gray11;
         }
     
         .thumb-desc {
-            color: $color-fg1;
+            color: $color-gray11;
         }
     }
 }
@@ -439,21 +431,21 @@ pre {
 
     thead {
         text-align: left;
-        background-color: $color-bg1;
-        color: $color-fg1;
+        background-color: $color-table-head-bg;
+        color: $color-table-head-text;
         th {
             padding: 5px 20px 5px 20px;
         }
     }
 
     tbody {
-        background-color: $color-bg0h;
-        color: $color-fg3;
+        background-color: $color-table-body-bg;
+        color: $color-table-body-text;
         td {
             padding: 3px 20px 3px 20px;
         }
         tr:not(:first-of-type) {
-            border-top: 1px solid $color-bg0;
+            border-top: 1px solid $color-table-row-separator;
         }
     }
 
@@ -484,27 +476,23 @@ blockquote {
 
         margin-left: 10px;
         thead {
-            background-color: $color-bg2;
+            background-color: $color-quote-table-head-bg;
         }
         tbody {
-            background-color: $color-bg0;
-            color: $color-fg2;
+            background-color: $color-quote-table-body-bg;
+            color: $color-quote-table-body-text;
             tr:not(:first-of-type) {
-                border-top: 1px solid $color-bg1;
+                border-top: 1px solid $color-quote-table-row-separator;
             }
         }
     }
 }
 
-/*.has-meta {
-    margin-bottom: 0;
-}*/
-
 .page-meta {
     font-style: italic;
     font-weight: 400;
     font-size: 0.9em;
-    color: $color-bg4;
+    color: $color-page-meta-text;
     text-align: right;
     margin-block-end: 0.5em;
 }
@@ -514,18 +502,18 @@ blockquote {
 }
 
 .prev-next {
-    border-top: 3px dotted $color-fg1;
+    border-top: 3px dotted $color-prev-next-text;
     padding-top: 1em;
     margin-top: 2em;
 
     font-weight: 300;
-    color: $color-fg3;
+    color: $color-prev-next-text;
 
     a {
         font-weight: bold;
-        color: $color-yellow1;
+        color: $color-prev-next-link;
         &:hover {
-            color: $color-fg1;
+            color: $color-prev-next-link-hover;
         }
     }
 }
@@ -564,23 +552,22 @@ blockquote {
 }
 
 #feedback {
-    color: $color-fg4;
+    color: $color-feedback-text;
     font-weight: 300;
     font-style: italic;
     font-size: 0.9em;
 
     a {
-        color: $color-blue2;
+        color: $color-feedback-link;
         text-decoration: none;
         &:hover {
-            color: $color-fg1;
+            color: $color-feedback-link-hover;
         }
     }
 }
 
 .light-dark {
     font-size: 1.5em;
-
     i {
         padding-left: 10px;
         padding-right: 10px;
@@ -589,14 +576,14 @@ blockquote {
 
 .mode-on {
     pointer-events: none;
-    opacity: 0.5;
+    color: $color-footer-mode-off;
 }
 
 .mode-off {
+    color: $color-footer-link;
     pointer-events: auto;
-    opacity: 1.0;
     &:hover {
-        color: $color-fg0;
+        color: $color-footer-link-hover;
         cursor: pointer;
     }
 }
