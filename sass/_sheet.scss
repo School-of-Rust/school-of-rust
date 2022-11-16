@@ -147,6 +147,10 @@ p > a, li > a, em > a, strong > a {
     }
 }
 
+li > a {
+    text-decoration: 0 solid none;
+}
+
 .video {
     position: relative;
     width: 100%;
