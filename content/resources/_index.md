@@ -39,24 +39,20 @@ also one of the most popular choices.
 - The [Rust Tools](https://www.rust-lang.org/tools) page on the offical website has more options if you don't use any
 of the above.
 
-## Other Header
+## Big Header
+
+### Small Header
 
 Testing another header with some `SpecialCode` blocks *`LikeThis`* and **`ThisOneToo`** after it, and some extra words at the end of this sentences so
 that it wraps around at least once.
 
-```rust
-struct Vec2<T: Clone> {
-    x: T,
-    y: T,
+```rust,linenos
+struct Foo {
+    bar: i32
 }
 
 fn main() {
-
-    let p = Vec2::new(123, 456);
-
-    // and a comment!
-    println!("With some rust code in it!");
-    println!("Let's do a few lines so we can test how compact it is.");
+    println!("Hello there, world!");
 }
 ```
 
