@@ -39,42 +39,6 @@ also one of the most popular choices.
 - The [Rust Tools](https://www.rust-lang.org/tools) page on the offical website has more options if you don't use any
 of the above.
 
-## Big Header
-
-### Small Header
-
-Testing another header with some `SpecialCode` blocks *`LikeThis`* and **`ThisOneToo`** after it, and some extra words at the end of this sentences so
-that it wraps around at least once.
-
-```rust,linenos
-struct Foo {
-    bar: i32
-}
-
-fn main() {
-    println!("Hello there, world!");
-}
-```
-
-```rust,linenos
-fn main() {
-    /* and a block
-    comment here! */
-    println!("And this time with line numbers!");
-    println!("Let's do a few lines so we can test how compact it is.");
-}
-```
-
-Followed by a table to make sure I'm not breaking this...
-
-| type    | pixel format         | something else |
-|---------|----------------------|----------------|
-| u8      | TextureId::default() | blah           |
-| sampler | Sampler::new()       | 12345          |
-| float   | 0.0                  | "a string"     |
-
-And some text afterwards.
-
 ### Other Websites
 
 - [Crates.io](https://crates.io/) is the official Rust package depository. It seems obvious to put here, but everyone
