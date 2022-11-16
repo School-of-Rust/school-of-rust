@@ -137,7 +137,7 @@ p {
     }
 }
 
-p > a, li > a {
+p > a, li > a, em > a, strong > a {
     text-decoration: 1.5px solid underline;
     color: $color-link;
     text-decoration-color: $color-link;
