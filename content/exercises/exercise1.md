@@ -2,6 +2,9 @@
 title = "First Exercise"
 description = "Here's a first exercise to do!"
 date = 2021-08-29
+
+draft = true
+
 [extra]
 icon = "fa-solid fa-person-running"
 +++

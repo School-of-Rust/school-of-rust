@@ -7,6 +7,8 @@ page_template = "lesson.html"
 sort_by = "weight"
 weight = 20
 
+draft = true
+
 [extra]
 icon = "fa-solid fa-cubes"
 +++

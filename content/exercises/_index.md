@@ -23,5 +23,5 @@ usually be in the form of small example programs they will write. These programs
 will have clearly defined goals and parameters, so the author will be able to build
 them and test if they work correctly.
 
-> ### WORK IN PROGRESS
-> There are no exercises yet, as I am focused on creating lessons first.
+> ### <i class="fa-solid fa-warning"></i> WORK IN PROGRESS
+> Exercises are still being developed, so there are none available at this time. Thanks for your patience, and stay tuned!

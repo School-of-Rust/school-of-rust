@@ -20,3 +20,6 @@ are confusing to you, I would love to know how I can improve them.
 
 You are also welcome to message us on [<i class="fa-brands fa-twitter"></i> Twitter](https://twitter.com/SchoolRust)
 with your feedback and suggestions.
+
+> ### <i class="fa-solid fa-warning"></i> WORK IN PROGRESS
+> Lessons are still being developed, so there are none available at this time. Thanks for your patience, and stay tuned!

@@ -6,6 +6,8 @@ page_template = "lesson.html"
 sort_by = "weight"
 weight = 10
 
+draft = true
+
 [extra]
 icon = "fa-solid fa-door-open"
 +++
