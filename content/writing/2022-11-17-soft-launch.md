@@ -74,6 +74,6 @@ When I work on big, polished, exciting educational stuff like this, I always fin
 
 I appreciate it! At this point in time, I don't need any help with anything directly, but I am always open to feedback on the site, fixes for any bugs you might find (even things like typos), and especially interested if you have suggestions for specific topics and learning material you would like to see covered.
 
-Until then, give the [<i class="fa-brands fa-github"></i> source code](https://github.com/School-of-Rust/school-of-rust) a star on *Github*, and read how the site works if you are interested in that. Also, join the [<i class="fa-brands fa-discord"></i> Discord channel](https://discord.gg/vdPK7ztcD2) channel, where you are always welcome to ask me questions directly, and eventually help others who are working their way through the lessons (once they are up).
+Until then, give the [<i class="fa-brands fa-github"></i> source code](https://github.com/School-of-Rust/school-of-rust) a star on *Github*, and read how the site works if you are interested in that. Also, join the [<i class="fa-brands fa-discord"></i> Discord server](https://discord.gg/vdPK7ztcD2), where you are always welcome to ask me questions directly, and eventually help others who are working their way through the lessons (once they are up).
 
 I'm excited to get more folks using Rust, which I think is a beautiful and fun language with a very promising future. Thanks for visiting!
