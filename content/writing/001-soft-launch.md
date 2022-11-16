@@ -9,8 +9,6 @@ icon = "fa-solid fa-hand-sparkles"
 
 I think I am quite happy with the current state of the website's look and feel, so consider this a quiet soft-launch for *School of Rust*.
 
----
-
 - [Content Plans](#content-plans)
 - [Site Design](#site-design)
   - [Increased Spacing](#increased-spacing)
@@ -19,8 +17,6 @@ I think I am quite happy with the current state of the website's look and feel, 
   - [Entirely Open Source](#entirely-open-source)
   - [Page Source Links](#page-source-links)
 - ["How Can I Help?"](#how-can-i-help)
-
----
 
 ## Content Plans
 
