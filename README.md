@@ -30,6 +30,8 @@ To create content for the site, I create pages in [markdown](https://commonmark.
 
 Because markdown is so simple and easy to write, I am able to write and revise and edit articles and tutorials much more efficiently.
 
+This may seem like a lot of work, but this setup allows me to write content for the site without relying on a complicated content management system like (such as *Wordpress* or *Ghost*). Static pages also load very fast, so the website is slim and snappy.
+
 ## Some Idiosyncrasies
 
 There are a couple tricks (*ahem*... hacks) I use to give myself a bit more flexibility when writing code tutorials, which I will document here... even if just for myself!
