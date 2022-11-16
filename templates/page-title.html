@@ -1,6 +1,13 @@
 {% set icon = page.extra.icon | default(value="fa-solid fa-question") %}
 <h1 class="has-meta"><i class="{{ icon }}"></i> {{ page.title }}</h1>
 <div class="page-meta">
-    <i class="fa-solid fa-calendar-days"></i> Updated <span id="date">{{ page.date }}</span>
+    {% if page.updated %}
+        {% set prefix = "Updated" %}
+        {% set date = page.updated %}
+    {% else %}
+        {% set prefix = "Posted" %}
+        {% set date = page.date %}
+    {% endif %}
+    <i class="fa-solid fa-calendar-days"></i> {{ prefix }} <span id="date">{{ date }}</span>
     <i class="fa-solid fa-clock"></i> {{ page.reading_time }} minute read
 </div>
