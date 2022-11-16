@@ -1,15 +1,17 @@
 //localStorage.clear();
 const theme = localStorage.getItem("theme");
 const sheetLink = document.querySelector("#sheet-link");
-
-console.log(theme);
+const syntaxLink = document.querySelector("#syntax-link");
 
 if (theme == "light") {
     sheetLink.href = "/light.css";
+    syntaxLink.href = "/syntax-light.css";
 } else if (theme == "dark") {
     sheetLink.href = "/dark.css";
+    syntaxLink.href = "/syntax-dark.css";
 } else {
     sheetLink.href = "/dark.css";
+    syntaxLink.href = "/syntax-dark.css";
 
     // TODO: detect preferred OS mode?
     /*const pref = window.matchMedia('(prefers-color-scheme: light)');
@@ -33,7 +35,8 @@ window.onload = function() {
     }
 
     lightBtn.addEventListener("click", function() {
-        sheetLink.href = "/light.css"
+        sheetLink.href = "/light.css";
+        syntaxLink.href = "/syntax-light.css";
 
         lightBtn.classList.remove("mode-off");
         lightBtn.classList.add("mode-on");
@@ -45,7 +48,8 @@ window.onload = function() {
     });
 
     darkBtn.addEventListener("click", function() {
-        sheetLink.href = "/dark.css"
+        sheetLink.href = "/dark.css";
+        syntaxLink.href = "/syntax-dark.css";
 
         darkBtn.classList.remove("mode-off");
         darkBtn.classList.add("mode-on");

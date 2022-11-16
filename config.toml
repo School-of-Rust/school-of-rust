@@ -22,7 +22,11 @@ feed_filename = "rss.xml"
 # Whether to do syntax highlighting
 # Theme can be customised by setting the `highlight_theme` variable to a theme supported by Zola
 highlight_code = true
-highlight_theme = "gruvbox-dark"
+highlight_theme = "css"
+highlight_themes_css = [
+  { theme = "gruvbox-dark", filename = "syntax-dark.css" },
+  { theme = "gruvbox-light", filename = "syntax-light.css" },
+]
 
 # Put all your custom variables here
 [extra]
