@@ -1,5 +1,6 @@
 +++
 title = "The Basics"
+slug = "the-basics"
 description = "Learn variables, functions, types, and control flow: the building blocks to write basic Rust code."
 template = "section.html"
 page_template = "lesson.html"
