@@ -5,20 +5,19 @@ $color-sidebar: $color-yellow2;
 $color-content-bg: $color-gray11;
 $color-content-text: $color-gray5;
 $color-link: $color-blue0;
-$color-link-hover: $color-yellow1;
-$color-link-underline: $color-blue1;
+$color-link-hover: $color-gray1;
 $color-h1: $color-gray5;
 $color-h1-underline: $color-gray5;
 $color-h2: $color-gray5;
 $color-h2-underline: $color-gray5;
-$color-h3: $color-blue0;
-$color-h3-underline: $color-blue0;
+$color-h3: $color-gray7;
+$color-h3-underline: $color-gray8;
 $color-list-marker: $color-gray8;
 
-$color-code-tag-bg: $color-gray1;
-$color-code-tag-text: $color-gray10;
-$color-code-tag-em: $color-yellow2;
-$color-code-tag-strong: $color-purple2;
+$color-code-tag-bg: mix($color-gray10, $color-gray11, 50%);
+$color-code-tag-text: $color-gray4;
+$color-code-tag-em: $color-orange0;
+$color-code-tag-strong: $color-purple0;
 $color-code-tag-border: $color-gray7;
 
 $color-hr: $color-gray6;
@@ -39,9 +38,9 @@ $color-copy-link: $color-gray8;
 $color-copy-link-hover: $color-gray12;
 
 $color-footer-text: $color-gray7;
-$color-footer-link: $color-blue2;
-$color-footer-link-hover: $color-gray11;
-$color-footer-mode-off: $color-gray5;
+$color-footer-link: $color-blue1;
+$color-footer-link-hover: $color-gray1;
+$color-footer-mode-off: $color-gray8;
 
 $color-nav-link: $color-blue1;
 $color-nav-link-hover: $color-yellow2;
@@ -58,11 +57,11 @@ $color-thumb-title-hover: $color-gray6;
 $color-thumb-desc: $color-gray6;
 $color-thumb-desc-hover: $color-gray5;
 
-$color-table-head-bg: $color-gray4;
-$color-table-head-text: $color-gray11;
-$color-table-body-bg: $color-gray1;
-$color-table-body-text: $color-gray9;
-$color-table-row-separator: $color-gray2;
+$color-table-head-bg: $color-gray9;
+$color-table-head-text: $color-gray4;
+$color-table-body-bg: $color-gray10;
+$color-table-body-text: $color-gray4;
+$color-table-row-separator: $color-gray11;
 
 $color-quote-table-head-bg: $color-gray5;
 $color-quote-table-body-bg: $color-gray2;
@@ -75,6 +74,6 @@ $color-prev-next-text: $color-gray9;
 $color-prev-next-link: $color-yellow1;
 $color-prev-next-link-hover: $color-gray11;
 
-$color-feedback-text: $color-gray8;
-$color-feedback-link: $color-blue2;
-$color-feedback-link-hover: $color-gray11;
+$color-feedback-text: $color-gray5;
+$color-feedback-link: $color-blue0;
+$color-feedback-link-hover: $color-gray1;

@@ -45,7 +45,15 @@ Testing another header with some `SpecialCode` blocks *`LikeThis`* and **`ThisOn
 that it wraps around at least once.
 
 ```rust
+struct Vec2<T: Clone> {
+    x: T,
+    y: T,
+}
+
 fn main() {
+
+    let p = Vec2::new(123, 456);
+
     // and a comment!
     println!("With some rust code in it!");
     println!("Let's do a few lines so we can test how compact it is.");

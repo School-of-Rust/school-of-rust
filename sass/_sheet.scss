@@ -78,7 +78,7 @@ h1 {
 h2 {
     font-size: 1.7em;
     color: $color-h2;
-    border-bottom: 2px dotted $color-h2-underline;
+    border-bottom: 3px dotted $color-h2-underline;
     margin-top: 1.5em;
     margin-bottom: 1.25em;
 }
@@ -138,11 +138,12 @@ p {
 }
 
 p > a, li > a {
-    text-decoration: 2px dotted underline;
-    text-decoration-color: $color-link-underline;
+    text-decoration: 2px solid underline;
     color: $color-link;
+    text-decoration-color: $color-link;
     &:hover {
         color: $color-link-hover;
+        text-decoration-color: $color-link-hover;
     }
 }
 
@@ -565,6 +566,7 @@ blockquote {
     font-size: 0.9em;
 
     a {
+        font-weight: 400;
         color: $color-feedback-link;
         text-decoration: none;
         &:hover {
