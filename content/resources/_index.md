@@ -38,6 +38,10 @@ of the above.
 - [Crates.io](https://crates.io/) is the official Rust package depository. It seems obvious to put here, but everyone
 uploads their crates here and you can often find amazing crates just by searching keywords!
 
+- [How Do I Start?](https://github.com/jondot/rust-how-do-i-start) is a curated collection of advice and resources for folks getting started in Rust. You'll find books, videos, articles, and lots of helpful suggestions.
+
+- [This Week in Rust](https://this-week-in-rust.org/) is a weekly selection of updates, articles, videos, events, and calls for participation from within the Rust community. I never miss a week, and it's worth reading through the many previous editions.
+
 - [Read Rust](https://readrust.net/) is a website that aggregates interesting posts related to the Rust programming
 language. It is organized into sections based on different interests.
 
