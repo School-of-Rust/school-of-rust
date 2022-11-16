@@ -138,7 +138,7 @@ p {
 }
 
 p > a, li > a {
-    text-decoration: 2px solid underline;
+    text-decoration: 1.5px solid underline;
     color: $color-link;
     text-decoration-color: $color-link;
     &:hover {
@@ -566,9 +566,10 @@ blockquote {
     font-size: 0.9em;
 
     a {
-        font-weight: 400;
+        //font-weight: 400;
         color: $color-feedback-link;
-        text-decoration: none;
+        text-decoration: underline;
+        text-decoration-thickness: 1px;
         &:hover {
             color: $color-feedback-link-hover;
         }
