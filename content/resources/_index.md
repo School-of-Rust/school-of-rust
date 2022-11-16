@@ -45,6 +45,8 @@ uploads their crates here and you can often find amazing crates just by searchin
 - [Read Rust](https://readrust.net/) is a website that aggregates interesting posts related to the Rust programming
 language. It is organized into sections based on different interests.
 
+- [API Guidelines](https://rust-lang.github.io/api-guidelines/about.html) is a style guide and walkthrough on recommended coding practices in Rust. Highly recommended reading if you want to start writing great Rust code and sharing it with the community.
+
 - [Are We Game Yet?](https://arewegameyet.rs/) is a collection of several crates useful for game developers using
 Rust. You'll find crates for vector math, graphics, networking, entities, scripting, and more.
 
