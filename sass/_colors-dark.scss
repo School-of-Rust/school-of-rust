@@ -3,13 +3,16 @@
 $color-page-bg: $color-gray1;
 $color-sidebar: $color-yellow2;
 $color-content-bg: $color-gray2;
-$color-content-text: $color-gray11;
+$color-content-text: $color-gray10;
 $color-link: $color-yellow1;
 $color-link-hover: $color-gray12;
 $color-link-underline: $color-gray6;
 $color-h1: $color-gray11;
-$color-h2: $color-yellow2;
-$color-h3: $color-green2;
+$color-h1-underline: $color-gray11;
+$color-h2: $color-gray11;
+$color-h2-underline: $color-gray10;
+$color-h3: $color-gray8;
+$color-h3-underline: $color-gray6;
 $color-list-marker: $color-gray8;
 
 $color-code-tag-bg: $color-gray1;
@@ -44,10 +47,16 @@ $color-nav-link: $color-blue1;
 $color-nav-link-hover: $color-yellow2;
 $color-nav-link-selected: $color-yellow2;
 
+$color-thumb-bg: $color-gray2;
+$color-thumb-bg-hover: $color-gray1;
 $color-thumb-border: $color-gray5;
+$color-thumb-border-hover: $color-gray7;
 $color-thumb-icon: $color-gray7;
+$color-thumb-icon-hover: $color-gray9;
 $color-thumb-title: $color-yellow1;
+$color-thumb-title-hover: $color-gray11;
 $color-thumb-desc: $color-gray9;
+$color-thumb-desc-hover: $color-gray11;
 
 $color-table-head-bg: $color-gray4;
 $color-table-head-text: $color-gray11;

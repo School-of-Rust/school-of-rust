@@ -19,6 +19,12 @@ to highlight some of the best ones here!
 > submit a [Github pull request](https://github.com/School-of-Rust/school-of-rust/blob/main/content/resources/_index.md)
 > directly to this page!
 
+> ## Something to Add?
+> If you know a website or channel that would fit here, you can recommend it directly to this page!
+
+> ### Something to Add?
+> If you know a website or channel that would fit here, you can recommend it directly to this page!
+
 ### Code Editors
 
 - [Visual Studio Code](https://visualstudiomagazine.com/articles/2020/04/22/rust-vs-code.aspx) has great Rust support

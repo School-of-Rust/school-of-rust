@@ -1,6 +1,8 @@
-localStorage.clear();
+//localStorage.clear();
 const theme = localStorage.getItem("theme");
 const sheetLink = document.querySelector("#sheet-link");
+
+console.log(theme);
 
 if (theme == "light") {
     sheetLink.href = "/light.css";
@@ -43,7 +45,6 @@ window.onload = function() {
     });
 
     darkBtn.addEventListener("click", function() {
-      console.log("DARK!");
         sheetLink.href = "/dark.css"
 
         darkBtn.classList.remove("mode-off");
