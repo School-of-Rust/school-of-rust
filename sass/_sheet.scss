@@ -207,24 +207,28 @@ blockquote {
         @extend .blockquote-h;
         color: $color-quote-h1;
         border-color: $color-quote-h1;
+        margin-bottom: 1em;
     }
 
     h2 {
         @extend .blockquote-h;
         color: $color-quote-h2;
         border-color: $color-quote-h2;
+        margin-bottom: 1em;
     }
 
     h3 {
         @extend .blockquote-h;
         color: $color-quote-h3;
         border-color: $color-quote-h3;
+        margin-bottom: 1em;
     }
 
     h4 {
         @extend .blockquote-h;
         color: $color-quote-h4;
         border-color: $color-quote-h4;
+        margin-bottom: 1em;
     }
 }
 
