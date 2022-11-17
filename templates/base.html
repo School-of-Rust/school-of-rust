@@ -2,24 +2,35 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+
     {% if section %}
-        <title>{{ config.title }} | {{ section.title }}</title>
-        <meta name="description" content="{{ section.description }}">
-        <meta property="og:title" content="{{ config.title }} | {{ section.title }}">
-        <meta property="og:url" content="{{ section.permalink }}">
-        
+        {% set title = config.title ~ " | " ~ section.title %}
+        {% set desc = section.description %}
+        {% set url = section.permalink %}
     {% elif page %}
-        <title>{{ config.title }} | {{ page.title }}</title>
-        <meta name="description" content="{{ page.description }}">
-        <meta property="og:title" content="{{ config.title }} | {{ page.title }}">
-        <meta property="og:url" content="{{ page.permalink }}">
+        {% set title = config.title ~ " | " ~ page.title %}
+        {% set desc = page.description %}
+        {% set url = page.permalink %}
     {% else %}
-        <title>{{ config.title }}</title>
-        <meta name="description" content="{{ config.description }}">
-        <meta property="og:title" content="{{ config.title }}">
-        <meta property="og:url" content="{{ config.base_url }}">
+        {% set title = config.title %}
+        {% set desc = config.description %}
+        {% set url = config.base_url %}
     {% endif %}
+
+    <title>{{ title }}</title>
+    <meta name="description" content="{{ desc }}">
+
+    <meta property="og:title" content="{{ title }}">
+    <meta property="og:description" content="{{ desc }}">
+    <meta property="og:url" content="{{ url }}">
     <meta property="og:image" content="{{ config.base_url }}/img/brand/og_image.png" />
+
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:site" content="@SchoolRust" />
+    <meta name="twitter:title" content="{{ title }}" />
+    <meta name="twitter:description" content="{{ desc }}" />
+    <meta name="twitter:image" content="{{ config.base_url }}/img/brand/twitter_image.png" />
+
     <meta name="keywords" content="Rust, Programming, Education, Tutorials, Learning, Crates">
     <meta name="author" content="Chevy Ray Johnston">
     <meta name="viewport" content="width=device-width" >
