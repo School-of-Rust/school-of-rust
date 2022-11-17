@@ -1,5 +1,5 @@
 {% macro thumbnail(title, desc, icon, link, date) %}
-    <a class="thumb", href="{{ link }}">
+    <a class="thumb", href="{{ link | safe }}">
         <table><tbody><tr>
             <td class="thumb-icon">
                 <i class="{{ icon }}"></i>
@@ -22,7 +22,7 @@
     {% else %}
         {% set disabled = "disabled" %}
     {% endif %}
-    <a class="fill {{ disabled }}" href="{{ url }}" target="_blank"><i class="{{ icon }}"></i> <div>{{ text }}</div></a>
+    <a class="fill {{ disabled }}" href="{{ url | safe }}" target="_blank"><i class="{{ icon }}"></i> <div>{{ text }}</div></a>
 {% endmacro crate %}
 
 {% macro prev_next(prev, next, singular) %}
@@ -33,7 +33,7 @@
                     <div>
                         <i class="fa-solid fa-arrow-left-long"></i> Prev {{ singular }}
                     </div>
-                    <a href="{{ prev.permalink }}">
+                    <a href="{{ prev.permalink | safe }}">
                         {% set icon = prev.extra.icon | default(value="fa-solid fa-question") %}
                         <i class="{{ icon }}"></i> {{ prev.title }}
                     </a>
@@ -44,7 +44,7 @@
                     <div>
                         Next {{ singular }} <i class="fa-solid fa-arrow-right-long"></i>
                     </div>
-                    <a href="{{ next.permalink }}">
+                    <a href="{{ next.permalink | safe }}">
                         {% set icon = next.extra.icon | default(value="fa-solid fa-question") %}
                         <i class="{{ icon }}"></i> {{ next.title }}
                     </a>
