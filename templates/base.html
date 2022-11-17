@@ -27,7 +27,7 @@
 
     <meta property="og:title" content="{{ title }}">
     <meta property="og:description" content="{{ desc }}">
-    <meta property="og:url" content="{{ url }}">
+    <meta property="og:url" content="{{ url | safe }}">
     <meta property="og:image" content="{{ config.base_url | safe }}/img/brand/og_image.png" />
 
     <meta name="twitter:card" content="summary_large_image" />
