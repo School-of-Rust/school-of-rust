@@ -523,6 +523,10 @@ blockquote {
     color: $color-page-meta-text;
     text-align: right;
     margin-block-end: 0.5em;
+
+    span {
+        padding-right: 5px;
+    }
 }
   
 #date {
