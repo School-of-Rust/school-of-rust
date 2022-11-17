@@ -409,8 +409,16 @@ pre {
   
     .thumb-desc {
         color: $color-thumb-desc;
+        font-weight: 400;
+        font-size: 0.95em;
+        padding-bottom: 5px;
+    }
+
+    .thumb-date {
+        color: $color-thumb-date;
         font-weight: 300;
         font-size: 0.95em;
+        font-style: italic;
     }
   
     &:hover {
@@ -428,6 +436,10 @@ pre {
     
         .thumb-desc {
             color: $color-thumb-desc-hover;
+        }
+
+        .thumb-date {
+            color: $color-thumb-date-hover;
         }
     }
 }

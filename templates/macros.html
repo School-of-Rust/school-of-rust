@@ -1,4 +1,4 @@
-{% macro thumbnail(title, desc, icon, link) %}
+{% macro thumbnail(title, desc, icon, link, date) %}
     <a class="thumb", href="{{ link }}">
         <table><tbody><tr>
             <td class="thumb-icon">
@@ -7,6 +7,10 @@
             <td>
                 <div class="thumb-title">{{ title }}</div>
                 <div class="thumb-desc">{{ desc }}</div>
+
+                {% if date %}
+                    <div class="thumb-date">Posted <span class="date">{{ date }}</span></div>
+                {% endif %}
             </td>
         </tr></tbody></table>
     </a>
@@ -56,13 +60,13 @@
         {% set sect = get_section(path=sect_name) %}
         {% if sect.extra.rank == rank %}
             {% set icon = sect.extra.icon | default(value="fa-solid fa-graduation-cap") %}
-            {{ macros::thumbnail(title=sect.title, desc=sect.description, icon=icon, link=sect.permalink) }}
+            {{ macros::thumbnail(title=sect.title, desc=sect.description, icon=icon, link=sect.permalink, date = "") }}
         {% endif %}
     {% endfor %}
     {% for page in section.pages %}
         {% if page.extra.rank == rank %}
             {% set icon = page.extra.icon | default(value="fa-solid fa-question") %}
-            {{ macros::thumbnail(title=page.title, desc=page.description, icon=icon, link=page.permalink) }}
+            {{ macros::thumbnail(title=page.title, desc=page.description, icon=icon, link=page.permalink, date = page.date) }}
             {{ page.summary | safe }}
         {% endif %}
     {% endfor %}

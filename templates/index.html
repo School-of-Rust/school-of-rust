@@ -8,16 +8,16 @@
 <div class="section-thumbs">
     <div>
         {% set sect = get_section(path="lessons/_index.md") %}
-        {{ macros::thumbnail(title=sect.title, desc=sect.description, icon=sect.extra.icon, link=sect.permalink) }}
+        {{ macros::thumbnail(title=sect.title, desc=sect.description, icon=sect.extra.icon, link=sect.permalink, date = "") }}
     </div><div>
         {% set sect = get_section(path="writing/_index.md") %}
-        {{ macros::thumbnail(title=sect.title, desc=sect.description, icon=sect.extra.icon, link=sect.permalink) }}
+        {{ macros::thumbnail(title=sect.title, desc=sect.description, icon=sect.extra.icon, link=sect.permalink, date = "") }}
     </div><div>
         {% set sect = get_section(path="exercises/_index.md") %}
-        {{ macros::thumbnail(title=sect.title, desc=sect.description, icon=sect.extra.icon, link=sect.permalink) }}
+        {{ macros::thumbnail(title=sect.title, desc=sect.description, icon=sect.extra.icon, link=sect.permalink, date = "") }}
     </div><div>
         {% set sect = get_section(path="resources/_index.md") %}
-        {{ macros::thumbnail(title=sect.title, desc=sect.description, icon=sect.extra.icon, link=sect.permalink) }}
+        {{ macros::thumbnail(title=sect.title, desc=sect.description, icon=sect.extra.icon, link=sect.permalink, date = "") }}
     </div>
 </div>
 
