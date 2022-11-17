@@ -1,4 +1,4 @@
-let codes = Array.from(document.getElementsByTagName("pre"));
+const codes = Array.from(document.getElementsByTagName("pre"));
 
 for (let i = 0; i < codes.length; ++i) {
 
