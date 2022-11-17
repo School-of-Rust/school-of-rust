@@ -4,8 +4,13 @@
     <meta charset="UTF-8">
 
     {% if section %}
-        {% set title = config.title ~ " | " ~ section.title %}
-        {% set desc = section.description %}
+        {% if section.title == "Home" %}
+            {% set title = config.title %}
+            {% set desc = config.description %}
+        {% else %}
+            {% set title = config.title ~ " | " ~ section.title %}
+            {% set desc = section.description %}
+        {% endif %}
         {% set url = section.permalink %}
     {% elif page %}
         {% set title = config.title ~ " | " ~ page.title %}
