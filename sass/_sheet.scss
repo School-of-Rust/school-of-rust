@@ -49,7 +49,7 @@ body {
     background-color: $color-content-bg;
     color: $color-content-text;
     
-    font-family: 'regular';
+    font-family: 'regular', sans-serif;
     font-weight: 400;
     font-size: 18px;
 
@@ -67,7 +67,7 @@ em {
 }
 
 h1 {
-    font-family: 'header';
+    font-family: 'header', sans-serif;
     font-weight: normal;
     margin-top: 0;
     color: $color-h1;
