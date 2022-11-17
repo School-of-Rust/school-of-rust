@@ -17,7 +17,7 @@
     {% else %}
         {% set selected = "" %}
     {% endif %}
-    <a href="{{ sect.permalink }}" class="nav-link {{ selected }}">
+    <a href="{{ sect.permalink | safe }}" class="nav-link {{ selected }}">
         <div><i class="{{ sect.extra.icon }}"></i></div>
         <div>{{ sect.title }}</div>
     </a>
