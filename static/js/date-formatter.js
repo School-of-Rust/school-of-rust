@@ -1,5 +1,3 @@
-//let dates = Array.from(document.geElementsBy("date"));
-//let dateElem = document.getElementById("date");
 let dates = document.getElementsByClassName("date");
 for (const dateElem of dates) {
     let date = new Date(dateElem.textContent);
