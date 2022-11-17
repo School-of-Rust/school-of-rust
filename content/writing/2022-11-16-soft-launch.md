@@ -2,7 +2,7 @@
 title = "Soft Launch"
 slug = "soft-launch"
 description = "Content plans, site design, feedback, and suggestions."
-date = 2022-11-17
+date = 2022-11-16
 [extra]
 icon = "fa-solid fa-hand-sparkles"
 +++
