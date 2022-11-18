@@ -1,6 +1,6 @@
 +++
 title = "Overcoming Lifetimes & the Baggage of OOP"
-slug = "get-a-lifetime"
+slug = "overcoming-lifetimes"
 description = "Rust's similarity to languages like C++ often set beginners on a pitfall-ridden path, and unlearning some of those patterns is a big step in overcoming that."
 date = 2022-11-18
 [extra]
