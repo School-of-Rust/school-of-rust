@@ -19,7 +19,7 @@ Gather around the fire, kids, because it's time to talk about *lifetimes*! Or, a
 - [The C# Coder Tries Again](#the-c-coder-tries-again)
   - [No More Lifetimes](#no-more-lifetimes)
   - [Rephrasing the Problem](#rephrasing-the-problem)
-- [Conclusion & Advice](#conclusion--advice)
+- [Conclusion and Advice](#conclusion-and-advice)
 
 ## Lifetimes? What Lifetimes?
 
@@ -332,7 +332,7 @@ There are all kind of different things we can try as well. For example, we could
 
 And if there was one spicy new way to approach this problem, it suddenly becomes easy to get motivated to search for more.
 
-## Conclusion & Advice
+## Conclusion and Advice
 
 Maybe you're smarter than me and this approach was always obvious to you, but just remember that this is one example. I have enountered many instances of this situation since I started using Rust regularly.
 
