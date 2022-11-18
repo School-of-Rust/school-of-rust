@@ -92,13 +92,18 @@ h3 {
 }
 
 ul, ol {
-    line-height: 1.36;
+    line-height: 1.6;
 }
 li {
     padding-left: 2px;
 
     &::marker {
         color: $color-list-marker;
+    }
+
+    li {
+        font-size: 0.9em;
+        font-weight: 300;
     }
 }
 
