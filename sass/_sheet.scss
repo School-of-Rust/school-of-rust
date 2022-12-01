@@ -143,12 +143,16 @@ p, li {
 }
 
 p > a, li > a, em > a, strong > a {
+    text-decoration: 1.5px solid underline $color-link;
     color: $color-link;
-    text-decoration-color: $color-link;
     &:hover {
         color: $color-link-hover;
         text-decoration-color: $color-link-hover;
     }
+}
+
+li > a {
+    text-decoration: none;
 }
 
 a > code {
@@ -159,10 +163,6 @@ a > code {
         color: $color-link-hover;
         text-decoration-color: $color-link-hover;
     }
-}
-
-li > a {
-    text-decoration: 0 solid none;
 }
 
 .video {
