@@ -143,9 +143,18 @@ p, li {
 }
 
 p > a, li > a, em > a, strong > a {
-    text-decoration: 1.5px solid underline;
     color: $color-link;
     text-decoration-color: $color-link;
+    &:hover {
+        color: $color-link-hover;
+        text-decoration-color: $color-link-hover;
+    }
+}
+
+a > code {
+    color: $color-link;
+    border: none;
+    text-decoration: underline solid $color-link 1.5px;
     &:hover {
         color: $color-link-hover;
         text-decoration-color: $color-link-hover;
