@@ -202,7 +202,7 @@ Some time has passed and I've had the chance to cool my head.
 
 A year later I keep [hearing about](https://survey.stackoverflow.co/2022/#section-most-loved-dreaded-and-wanted-programming-scripting-and-markup-languages) Rust, and everyone using it seems to be having the time of their life. I've also spent *another year* with C++, I am not enjoying it, and I *really* want an alternative. Rust still seems like the most promising candidate.
 
-And I did enjoy my time with it. Until the *indicent*.
+And I did enjoy my time with it. Until the *incident*.
 
 ### No More Lifetimes
 
