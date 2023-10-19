@@ -15,7 +15,7 @@ Gather around the fire, kids, because it's time to talk about *lifetimes*! Or, a
 - [The C# Coder Makes a Graph of Nodes](#the-c-coder-makes-a-graph-of-nodes)
   - [Object-Oriented Freedom](#object-oriented-freedom)
   - [What Does This Look Like In Rust?](#what-does-this-look-like-in-rust)
-  - ["Just Don't" {#just-dont}](#just-dont)
+  - ["Just Don't"](#just-dont)
 - [The C# Coder Tries Again](#the-c-coder-tries-again)
   - [No More Lifetimes](#no-more-lifetimes)
   - [Rephrasing the Problem](#rephrasing-the-problem)
