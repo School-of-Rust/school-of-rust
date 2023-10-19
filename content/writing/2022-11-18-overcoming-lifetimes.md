@@ -15,7 +15,7 @@ Gather around the fire, kids, because it's time to talk about *lifetimes*! Or, a
 - [The C# Coder Makes a Graph of Nodes](#the-c-coder-makes-a-graph-of-nodes)
   - [Object-Oriented Freedom](#object-oriented-freedom)
   - [What Does This Look Like In Rust?](#what-does-this-look-like-in-rust)
-  - ["Just Don't"](#just-dont)
+  - ["Just Don't" {#just-dont}](#just-dont)
 - [The C# Coder Tries Again](#the-c-coder-tries-again)
   - [No More Lifetimes](#no-more-lifetimes)
   - [Rephrasing the Problem](#rephrasing-the-problem)
@@ -182,7 +182,7 @@ They're stuck.
 
 > They might also reach for *`Box`*, *`Rc`*, and *`RefCell`*... only to be lost in a different kind of tangled mess of mutability, borrowing, and layers of ugly nested types.
 
-### "Just Don't"
+### "Just Don't" {#just-dont}
 
 At this point they maybe reach out for help, and are met with a true but frustrating answer:
 

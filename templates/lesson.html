@@ -4,7 +4,7 @@
 {% block content %}
     {% include "page-title.html" %}
     {{ page.content | safe }}
-    {{ macros::prev_next(prev = page.lighter, next = page.heavier, singular = "Lesson") }}
+    {{ macros::prev_next(prev = page.lower, next = page.higher, singular = "Lesson") }}
     {% include "feedback.html" %}
 
 {% endblock content %}

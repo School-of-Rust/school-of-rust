@@ -4,8 +4,8 @@
 {% block content %}
     {% include "page-title.html" %}
     {{ page.content | safe }}
-    {% if page.earlier or page.later %}
-        {{ macros::prev_next(prev = page.earlier, next = page.later, singular = "Post") }}
+    {% if page.lower or page.higher %}
+        {{ macros::prev_next(prev = page.lower, next = page.higher, singular = "Post") }}
     {% endif %}
     {% include "feedback.html" %}
 

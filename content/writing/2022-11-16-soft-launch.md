@@ -38,7 +38,7 @@ I like things very compact, so the initial design was a lot tighter. To improve 
 
 I hope this improves things a lot. There will probably be a few changes to this here and there as I get more feedback and find ways to improve readability even more.
 
-### Dark/Light Mode Toggle
+### Dark/Light Mode Toggle {#darklight-mode-toggle}
 
 I have also added a light mode to the site, which can be toggled using the little <i class="fa fa-sun"></i> and <i class="fa fa-moon"></i> icons at the very bottom of the page.
 
