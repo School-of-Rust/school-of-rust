@@ -5,7 +5,7 @@
     {% include "page-title.html" %}
     {{ page.content | safe }}
     {% if page.lower or page.higher %}
-        {{ macros::prev_next(prev = page.lower, next = page.higher, singular = "Post") }}
+        {{ macros::prev_next(prev = page.higher, next = page.lower, singular = "Post") }}
     {% endif %}
     {% include "feedback.html" %}
 
