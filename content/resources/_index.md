@@ -24,8 +24,7 @@ to highlight some of the best ones here!
 - [Visual Studio Code](https://visualstudiomagazine.com/articles/2020/04/22/rust-vs-code.aspx) has great Rust support
 and is the [most-used](https://visualstudiomagazine.com/articles/2020/04/22/rust-vs-code.aspx) code editor in the Rust community.
 
-- [IntelliJ](https://www.jetbrains.com/rust/) also has great Rust features, and *CLion* is my personal editor of
-choice.
+- [RustRover](https://www.jetbrains.com/rust/) is a full-featured Rust code editor developed by *JetBrains* with a great user experience.
 
 - [Vim](https://github.com/rust-lang/rust.vim) users will be pleased to know there is good support for Rust, and it is
 also one of the most popular choices.
@@ -64,13 +63,17 @@ every step of the way and answering questions.
 - [Let's Get Rusty](https://www.youtube.com/channel/UCSp-OaMpsO8K0KkOqyBl7_w) is a YouTube channel with many
 videos demonstrating various features of Rust and how to code idiomatically.
 
-### Conferences
+- [No Boilerplate](https://www.youtube.com/playlist?list=PLZaoyhMXgBzoM9bfb5pyUOT3zjnaDdSEP) is a YouTube channel with a whole playlist of educational videos about Rust.
 
-- [RustConf](https://rustconf.com/) is an annual conference for Rust held in Portland.
+- [christ biscardi](https://www.youtube.com/@chrisbiscardi)'s YouTube channel has a huge amount of Rust videos including workshops, live-coding, and overviews of new Rust releases.
 
-- [RustFest](https://rustfest.global/) is Europe's largest Rust conference.
+- [Logan Smith](https://www.youtube.com/@_noisecode)'s YouTube channel has several Rust educational opinion videos, often regarding API design and coding style.
 
-### Communities
+- [Nathan Stocks](https://www.youtube.com/@NathanStocks/playlists)' YouTube channel has several Rust videos where he reviews Rust releases, explaining the new features for each new version.
+
+### Community
+
+- The [Conferences & Events](https://foundation.rust-lang.org/events/) page on the Rust Foundation website lists upcoming and previous Rust events.
 
 - [The Offical Rust Discord](https://discord.com/invite/rust-lang) is a place you can get help, but also keep tabs
 on the development of Rust itself, as well as see what people are doing in different domains.
