@@ -7,7 +7,7 @@ sort_by = "date"
 weight = 20
 
 [extra]
-icon = "fa-solid fa-pen-nib"
+icon = "ri-pen-nib-fill"
 +++
 
 Whether I'm musing about Rust, commenting on the latest Rust news,

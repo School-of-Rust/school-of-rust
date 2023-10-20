@@ -10,7 +10,7 @@ weight = 20
 draft = true
 
 [extra]
-icon = "fa-solid fa-cubes"
+icon = "ri-box-3-fill"
 +++
 
 Once you have finished the [Introduction & Setup](/lessons/1-intro-and-setup),

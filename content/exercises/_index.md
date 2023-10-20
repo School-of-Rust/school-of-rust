@@ -7,7 +7,7 @@ sort_by = "date"
 weight = 30
 
 [extra]
-icon = "fa-solid fa-screwdriver-wrench"
+icon = "ri-tools-fill"
 +++
 
 I've noticed that a common question asked by people learning Rust is something like:

@@ -31,10 +31,10 @@
             <div class="prev fill">
                 {% if prev %}
                     <div>
-                        <i class="fa-solid fa-arrow-left-long"></i> Prev {{ singular }}
+                        <i class="ri-arrow-left-fill"></i> Prev {{ singular }}
                     </div>
                     <a href="{{ prev.permalink | safe }}">
-                        {% set icon = prev.extra.icon | default(value="fa-solid fa-question") %}
+                        {% set icon = prev.extra.icon | default(value="ri-question-fill") %}
                         <i class="{{ icon }}"></i> {{ prev.title }}
                     </a>
                 {% endif %}
@@ -42,10 +42,10 @@
             <div class="next fill">
                 {% if next %}
                     <div>
-                        Next {{ singular }} <i class="fa-solid fa-arrow-right-long"></i>
+                        Next {{ singular }} <i class="ri-arrow-right-fill"></i>
                     </div>
                     <a href="{{ next.permalink | safe }}">
-                        {% set icon = next.extra.icon | default(value="fa-solid fa-question") %}
+                        {% set icon = next.extra.icon | default(value="ri-question-fill") %}
                         <i class="{{ icon }}"></i> {{ next.title }}
                     </a>
                 {% endif %}
@@ -59,13 +59,13 @@
     {% for sect_name in section.subsections %}
         {% set sect = get_section(path=sect_name) %}
         {% if sect.extra.rank == rank %}
-            {% set icon = sect.extra.icon | default(value="fa-solid fa-graduation-cap") %}
+            {% set icon = sect.extra.icon | default(value="ri-graduation-cap-fill") %}
             {{ macros::thumbnail(title=sect.title, desc=sect.description, icon=icon, link=sect.permalink, date = "") }}
         {% endif %}
     {% endfor %}
     {% for page in section.pages %}
         {% if page.extra.rank == rank %}
-            {% set icon = page.extra.icon | default(value="fa-solid fa-question") %}
+            {% set icon = page.extra.icon | default(value="ri-question-fill") %}
             {{ macros::thumbnail(title=page.title, desc=page.description, icon=icon, link=page.permalink, date = page.date) }}
             {{ page.summary | safe }}
         {% endif %}

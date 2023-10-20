@@ -3,12 +3,12 @@ title = "Home"
 sort_by = "weight"
 
 [extra]
-icon = "fa-solid fa-home"
+icon = "ri-home-4-fill"
 +++
 
-# <i class="fa-solid fa-gear"></i> Learn Rust & Get Creative
+# <i class="ri-settings-4-fill"></i> Learn Rust & Get Creative
 
-> ### <i class="fa-solid fa-warning"></i> WORK IN PROGRESS
+> ### <i class="ri-error-warning-line"></i> WORK IN PROGRESS
 > This website is currently under development, so you may see random
 > changes or temporary posts from time-to-time as I am working on it.
 

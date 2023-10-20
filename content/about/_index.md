@@ -7,7 +7,7 @@ sort_by = "weight"
 weight = 50
 
 [extra]
-icon = "fa-solid fa-heart"
+icon = "ri-heart-3-fill"
 +++
 
 I'm Chevy Ray, a coder, writer, artist, and game designer from Canada.

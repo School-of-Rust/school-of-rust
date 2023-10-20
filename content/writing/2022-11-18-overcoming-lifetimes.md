@@ -4,7 +4,7 @@ slug = "overcoming-lifetimes"
 description = "Rust's similarity to languages like C++ often set beginners on a pitfall-ridden path, and unlearning some of those patterns is a big step in overcoming that."
 date = 2022-11-18
 [extra]
-icon = "fa-solid fa-circle-nodes"
+icon = "ri-node-tree"
 +++
 
 Gather around the fire, kids, because it's time to talk about *lifetimes*! Or, as we'll soon discover, perhaps the lack thereof.

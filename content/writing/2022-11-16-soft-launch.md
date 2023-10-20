@@ -4,7 +4,7 @@ slug = "soft-launch"
 description = "Content plans, site design, feedback, and suggestions."
 date = 2022-11-16
 [extra]
-icon = "fa-solid fa-hand-sparkles"
+icon = "ri-rocket-2-fill"
 +++
 
 I think I am quite happy with the current state of the website's look and feel, so consider this a quiet soft-launch for *School of Rust*.
@@ -26,7 +26,7 @@ For official launch, I would like to have at least 2-3 [lesson series](/lessons)
 
 In the meanwhile, I plan on using the site as a home base for some [writing](/writing), as I have several ideas for what I think are compelling and educational articles and tutorials.
 
-> I've got my work cut out for me <i class="fa fa-face-grin-beam-sweat"></i>
+> I've got my work cut out for me 😅
 
 ## Site Design
 
@@ -40,7 +40,7 @@ I hope this improves things a lot. There will probably be a few changes to this 
 
 ### Dark/Light Mode Toggle {#darklight-mode-toggle}
 
-I have also added a light mode to the site, which can be toggled using the little <i class="fa fa-sun"></i> and <i class="fa fa-moon"></i> icons at the very bottom of the page.
+I have also added a light mode to the site, which can be toggled using the little <i class="ri-sun-fill"></i> and <i class="ri-moon-fill"></i> icons at the very bottom of the page.
 
 > The toggle buttons are kind of hidden away down there, so it might be worth finding a place to fit them at the top of the page.
 
@@ -52,7 +52,7 @@ I am very concerned with creating high quality learning material for *School of 
 
 ### Entirely Open Source
 
-This entire website is open-source, something I decided to do early on, and can be found at [<i class="fa-brands fa-github"></i> School-of-Rust/school-of-rust](https://github.com/School-of-Rust/school-of-rust).
+This entire website is open-source, something I decided to do early on, and can be found at [<i class="ri-github-fill"></i> School-of-Rust/school-of-rust](https://github.com/School-of-Rust/school-of-rust).
 
 Rust's notorious difficulty for beginners (even those transitioning from difficult languages like C++) is something that I believe can be overcome with great care put into our learning material.
 
@@ -62,11 +62,11 @@ To help with this, I decided that I could try leveraging *Github* directly as a 
 
 To make this as straightforward as possible for readers, I added a feature I am quite proud of: *every page* on the site has a link at the bottom directly to the *source code for that page*. If you scroll down, you will see it:
 
-> *If you have a suggested change or have found an error, you can also visit the [<i class="fa-brands fa-github"></i> source code for this page](https://github.com/School-of-Rust/school-of-rust/tree/main/content/writing/001-soft-launch.md), where you can file an issue directly or submit a pull request.*
+> *If you have a suggested change or have found an error, you can also visit the [<i class="ri-github-fill"></i> source code for this page](https://github.com/School-of-Rust/school-of-rust/tree/main/content/writing/001-soft-launch.md), where you can file an issue directly or submit a pull request.*
 
 This is automatically created by the templating system, so I do not have to manually write every one of these. Because the site is generated directly from the repository via *Cloudflare*, the source code will always reflect the current state of the site. 
 
-> <i class="fa fa-skull"></i> Unless the site is failing to build, in which case I have a bigger problem.
+> <i class="ri-skull-fill"></i> Unless the site is failing to build, in which case I have a bigger problem.
 
 ## "How Can I Help?"
 
@@ -74,6 +74,6 @@ When I work on big, polished, exciting educational stuff like this, I always fin
 
 I appreciate it! At this point in time, I don't need any help with anything directly, but I am always open to feedback on the site, fixes for any bugs you might find (even things like typos), and especially interested if you have suggestions for specific topics and learning material you would like to see covered.
 
-Until then, give the [<i class="fa-brands fa-github"></i> source code](https://github.com/School-of-Rust/school-of-rust) a star on *Github*, and read how the site works if you are interested in that. Also, join the [<i class="fa-brands fa-discord"></i> Discord server](https://discord.gg/vdPK7ztcD2), where you are always welcome to ask me questions directly, and eventually help others who are working their way through the lessons (once they are up).
+Until then, give the [<i class="ri-github-fill"></i> source code](https://github.com/School-of-Rust/school-of-rust) a star on *Github*, and read how the site works if you are interested in that. Also, join the [<i class="ri-discord-fill"></i> Discord server](https://discord.gg/vdPK7ztcD2), where you are always welcome to ask me questions directly, and eventually help others who are working their way through the lessons (once they are up).
 
 I'm excited to get more folks using Rust, which I think is a beautiful and fun language with a very promising future. Thanks for visiting!

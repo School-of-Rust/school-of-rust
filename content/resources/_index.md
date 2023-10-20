@@ -7,7 +7,7 @@ sort_by = "date"
 weight = 40
 
 [extra]
-icon = "fa-solid fa-book"
+icon = "ri-book-2-fill"
 +++
 
 There are a lot of other great resources for learning Rust, so I want

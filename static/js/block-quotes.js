@@ -8,9 +8,9 @@ for (let i = 0; i < quotes.length; ++i) {
         let text = p.innerHTML;
         if (text.startsWith('"') && text.endsWith('"')) {
             const left = document.createElement("i");
-            left.setAttribute("class", "fa-solid fa-quote-left quote");
+            left.setAttribute("class", "ri-double-quotes-l quote");
             const right = document.createElement("i");
-            right.setAttribute("class", "right fa-solid fa-quote-right quote");
+            right.setAttribute("class", "right ri-double-quotes-r quote");
             p.innerHTML = "";
             p.appendChild(left);
             p.innerHTML += text.substring(1, text.length - 1);

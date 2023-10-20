@@ -8,14 +8,14 @@
     {{ section.content | safe }}
 
     {% for page in section.pages %}
-        {% set icon = page.extra.icon | default(value="fa-solid fa-question") %}
+        {% set icon = page.extra.icon | default(value="ri-question-fill") %}
         {{ macros::thumbnail(title=page.title, desc=page.description, icon=icon, link=page.permalink, date = page.date) }}
         {{ page.summary | safe }}
     {% endfor %}
 
     {% for sect_name in section.subsections %}
         {% set sect = get_section(path=sect_name) %}
-        {% set icon = sect.extra.icon | default(value="fa-solid fa-graduation-cap") %}
+        {% set icon = sect.extra.icon | default(value="ri-graduation-cap-fill") %}
         {{ macros::thumbnail(title=sect.title, desc=sect.description, icon=icon, link=sect.permalink, date = "") }}
     {% endfor %}
 

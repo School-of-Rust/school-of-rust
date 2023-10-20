@@ -9,7 +9,7 @@ weight = 10
 draft = true
 
 [extra]
-icon = "fa-solid fa-door-open"
+icon = "ri-door-open-fill"
 +++
 
 This series will get you installed with Rust and all the basic tools

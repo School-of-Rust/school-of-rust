@@ -34,7 +34,7 @@ for (let i = 0; i < codes.length; ++i) {
 
     // Create the clipboard link
     const copyIcon = document.createElement("i");
-    copyIcon.setAttribute("class", "fa fa-scissors");
+    copyIcon.setAttribute("class", "ri-scissors-fill");
 
     const copy = document.createElement("a");
     copy.setAttribute("class", "code-link");
